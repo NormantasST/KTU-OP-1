@@ -1,0 +1,7 @@
+Tomas V;100
+Vilma J;98
+Tikas S;100
+Saimonas L;101.5
+Tikas O;100
+Kemas I;101.5
+Olas O;5

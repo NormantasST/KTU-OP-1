@@ -1,0 +1,8 @@
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\bin\Debug\net461\P2.Sav1.exe
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\bin\Debug\net461\P2.Sav1.pdb
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\obj\Debug\net461\P2.Sav1.csprojAssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\obj\Debug\net461\P2.Sav1.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\obj\Debug\net461\P2.Sav1.AssemblyInfoInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\obj\Debug\net461\P2.Sav1.AssemblyInfo.cs
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\obj\Debug\net461\P2.Sav1.exe
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main\P2\P2.Sav1\obj\Debug\net461\P2.Sav1.pdb

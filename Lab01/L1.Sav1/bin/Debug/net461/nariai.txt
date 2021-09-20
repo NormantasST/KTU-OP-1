@@ -1,0 +1,4 @@
+Tomas V;100,1
+Vilma J;100,1
+Tikas S;100,1
+Saimonas L;100,1

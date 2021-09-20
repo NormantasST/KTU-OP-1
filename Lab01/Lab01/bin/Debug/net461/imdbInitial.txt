@@ -1,0 +1,3 @@
+Name                |Date                |Genre               |Studio              |Director            |Actors                                   |Revenue   |
+Hamilton            |                2020|History             |Netflix             |Lin-Manuel Miranda  |Lin-Manuel Miranda  |Leslie Odom Jr      |       212|
+Snowpiercer         |                2013|Science Fiction     |CJ Entertainment    |Bong Joon Ho        |C. Evans            |S Kang-ho           |        98|

@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\P2.Sav3.exe
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\P2.Sav3.deps.json
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\P2.Sav3.runtimeconfig.json
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\P2.Sav3.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\P2.Sav3.dll
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\ref\P2.Sav3.dll
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\bin\Debug\net5.0\P2.Sav3.pdb
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.AssemblyInfo.cs
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.dll
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\ref\P2.Sav3.dll
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.pdb
+C:\Users\Admin\Desktop\OOP  S1\P2\P2.Sav3\obj\Debug\net5.0\P2.Sav3.genruntimeconfig.cache

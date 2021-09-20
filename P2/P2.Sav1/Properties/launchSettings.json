@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "P2.Sav1": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {},
+      "distributionName": ""
+    }
+  }
+}
