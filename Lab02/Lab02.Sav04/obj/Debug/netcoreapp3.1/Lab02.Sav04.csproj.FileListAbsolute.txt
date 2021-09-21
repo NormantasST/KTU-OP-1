@@ -1,0 +1,14 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\bin\Debug\netcoreapp3.1\Lab02.Sav04.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\bin\Debug\netcoreapp3.1\Lab02.Sav04.deps.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\bin\Debug\netcoreapp3.1\Lab02.Sav04.runtimeconfig.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\bin\Debug\netcoreapp3.1\Lab02.Sav04.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\bin\Debug\netcoreapp3.1\Lab02.Sav04.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\bin\Debug\netcoreapp3.1\Lab02.Sav04.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab02\Lab02.Sav04\obj\Debug\netcoreapp3.1\Lab02.Sav04.genruntimeconfig.cache

@@ -138,7 +138,7 @@ namespace Lab02.Register
         {
             List<Dog> filtered = new List<Dog>();
             foreach (Dog dog in this.AllDogs)
-                if (dog.RequiresVaccination())
+                if (dog.RequiresVaccination)
                     filtered.Add(dog);
             
             return filtered;
