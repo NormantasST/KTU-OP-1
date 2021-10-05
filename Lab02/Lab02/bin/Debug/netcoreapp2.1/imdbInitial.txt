@@ -1,0 +1,10 @@
+Initial Data:
+
+Tomas               |2000-04-12 00:00:00 |Kaunas              
+
+Name                |Date                |Genre               |Studio              |Director            |Actor 1             |Actor 2             |Revenue   |
+Hangover            |                2012|Comedy              |Studio A            |Director A          |N. Cage             |J. Sperrow          |       318|
+
+Benas               |1988-03-01 00:00:00 |Vilnius             
+
+No Movies Found

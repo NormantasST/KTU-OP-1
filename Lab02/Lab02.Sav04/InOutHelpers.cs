@@ -10,24 +10,37 @@ namespace Lab02.Sav04
     /// </summary>
     static class InOutHelpers
     {
-        private const int fSize = -20; // Format Size for strings
+        private const int fSize = 20; // Format Size for strings
 
         /// <summary>
         /// Reads data from .txt file
         /// </summary>
         public static Apartment ReadData(string fileName)
         {
+            int floorNum = 1;
+            int roomNumIndex = 1;
             Apartment apartment = new Apartment(9);
             string[] lines = File.ReadAllLines(fileName);
             foreach (string line in lines)
             {
                 string[] values = line.Split(';');
-                Flat flat = new Flat(int.Parse(values[0]),
-                                     int.Parse(values[1]),
+                int roomNum = int.Parse(values[0]);
+                 
+                Flat flat = new Flat(roomNum,
+                                     floorNum,
+                                     double.Parse(values[1]),
                                      int.Parse(values[2]),
                                      double.Parse(values[3]),
                                      values[4]);
 
+                roomNumIndex++;
+                if(roomNumIndex > 3)
+                {
+                    floorNum++;
+                    roomNumIndex = 1;
+                    if (floorNum > 9)
+                        floorNum = 1;
+                }
                 apartment.AddFlat(flat);
             }
             return apartment;
@@ -41,11 +54,11 @@ namespace Lab02.Sav04
             using (StreamWriter sw = new StreamWriter(fileName))
             {
                 sw.WriteHeader(infoText);
-                if (apartment.FlatCount <= 0)
+                if (apartment.Flats.Count <= 0)
                     sw.WriteLine("No Data Found");
                 else
-                    foreach (Floor floor in apartment.Floors)
-                        floor.Flats.WriteFloor(sw);
+                    foreach (Flat flat in apartment.Flats)
+                        sw.WriteLine($"{flat.RoomNum,fSize}|{flat.FloorNum, fSize}|{flat.Area,fSize}|{flat.RoomCount,fSize}|{flat.Price,fSize}|{flat.PhoneNumber,fSize}|");
 
                 sw.WriteLine();
             }
@@ -78,7 +91,7 @@ namespace Lab02.Sav04
         /// <summary>
         /// Gets Header Info
         /// </summary>
-        public static string GetHeader() => string.Format($"{"Flat Number", fSize}|{"Area",fSize}|{"Room Count",fSize}|{"Price",fSize}|{"Phone Number",fSize}|");
+        public static string GetHeader() => string.Format($"{"Flat Number", -fSize}|{"Floor",-fSize}|{"Area",-fSize}|{"Room Count",-fSize}|{"Price",-fSize}|{"Phone Number",-fSize}|");
 
         /// <summary>
         /// Takes in List of Flats, Outputs to StreamWriter
@@ -86,7 +99,7 @@ namespace Lab02.Sav04
         public static void WriteFloor(this List<Flat> flats, StreamWriter sw)
         {
             foreach (Flat flat in flats)
-                sw.WriteLine($"{flat.RoomNum,-fSize}|{flat.Area,-fSize}|{flat.RoomCount,-fSize}|{flat.Price,-fSize}|{flat.PhoneNumber,-fSize}|");
+                sw.WriteLine($"{flat.RoomNum,fSize}|{flat.FloorNum,fSize}|{flat.Area,fSize}|{flat.RoomCount,fSize}|{flat.Price,fSize}|{flat.PhoneNumber,fSize}|");
             
         }
     }

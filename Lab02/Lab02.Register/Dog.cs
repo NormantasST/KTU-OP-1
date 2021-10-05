@@ -6,24 +6,20 @@ namespace Lab02.Register
 {
     class Dog
     {
-        private const int VaccinationDuration = 1;
+        private const int VaccinationDuration = 100;
         public int ID { get; set; }
         public string Name { get; set; }
         public string Breed { get; set; }
         public DateTime BirthDate { get; set; }
         public DateTime LastVaccinationDate { get; set; }
         public Gender Gender { get; set; }
-        public bool RequiresVaccination
+        public bool RequiresVaccination()
         {
-            get
+            if (LastVaccinationDate.Equals(DateTime.MinValue))
             {
-                if (LastVaccinationDate.Equals(DateTime.MinValue))
-                {
-                    return true;
-                }
-                return LastVaccinationDate.AddYears(VaccinationDuration)
-                .CompareTo(DateTime.Now) < 0;
+                return true;
             }
+            return LastVaccinationDate.AddYears(VaccinationDuration).CompareTo(DateTime.Now) < 0;
         }
 
         public int Age

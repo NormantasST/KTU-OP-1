@@ -5,14 +5,23 @@ namespace Lab02.Register
 {
     class Program
     {
+        private const int index = 1;
         static void Main(string[] args)
         {
             DogsRegister register = InOutUtils.ReadDogs(@"Dogs.csv");
             Console.WriteLine("Iš viso šunų: {0}", register.DogsCount());
+            Console.WriteLine($"Index: {index} Dog's Name Is: {register.FindByIndex(index).Name}");
             InOutUtils.PrintDogsToConsole(register);
+
+            Console.WriteLine("Filtered Dogs By Vaccination");
+            List<Vaccination> vaccinations = InOutUtils.ReadVaccinations("Vaccinations.csv");
+            register.UpdateVaccinationsInfo(vaccinations);
+            InOutUtils.PrintDogsToConsole(register.FilterByVaccinationExpired());
 
             Console.WriteLine("Patinų: {0}", register.CountByGender(Gender.Male));
             Console.WriteLine("Patelių: {0}", register.CountByGender(Gender.Female));
+
+            Console.Read();
 
             /*
             List<Dog> allDogs = InOutUtils.ReadDogs(@"Dogs.csv");

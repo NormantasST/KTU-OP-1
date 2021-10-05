@@ -16,49 +16,71 @@ namespace Lab02
         private const int tSize = -20;
 
         /// <summary>
+        /// Writes Initial data from List User Object
+        /// </summary>
+        public static void WriteInitialData(this List<User> users, string outputPath)
+        {
+            using (StreamWriter sw = new StreamWriter(outputPath))
+            {
+                sw.WriteLine("Initial Data:");
+                if (users.Count > 0)
+                    foreach (User user in users)
+                    {
+                        sw.WriteLine();
+                        sw.WriteLine($"{user.Name,tSize}|{user.BirthDate,tSize}|{user.City,tSize}");
+                        sw.WriteLine();
+                        sw.WriteMovieList(user, '|');
+                    }
+                else
+                    sw.WriteLine("No Data Found");
+            }
+        }
+
+        /// <summary>
         /// REwrites Initial Data. Takes List<IMDB>, string outputPath. Returns void
         /// </summary>
         /// <param name="movies">List IMDB object</param>
         /// <param name="outputPath"> output path to where to write the data</param>
-        public static void WriteInitialData(List<IMDB> movies, string outputPath)
+        public static void WriteMovieList(this StreamWriter sw, User user, char splitter)
         {
-       
-
-
-            using (StreamWriter sw = new StreamWriter(outputPath))
+            if (user.GetMovieCount() > 0)
             {
-                sw.WriteLine($"{"Name",tSize}|" +
-                             $"{"Date",tSize}|" +
-                             $"{"Genre",tSize}|" +
-                             $"{"Studio",tSize}|" +
-                             $"{"Director",tSize}|" +
-                             $"{"Actors",(tSize * 2) - 1}|" +
-                             $"{"Revenue",-10}|");
+                sw.WriteLine($"{"Name",tSize}{splitter}" +
+                                $"{"Date",tSize}{splitter}" +
+                                $"{"Genre",tSize}{splitter}" +
+                                $"{"Studio",tSize}{splitter}" +
+                                $"{"Director",tSize}{splitter}" +
+                                $"{"Actor 1",tSize}{splitter}" +
+                                $"{"Actor 2", tSize}{splitter}" +
+                                $"{"Revenue",-10}{splitter}");
 
-                foreach (IMDB movie in movies)
-                    sw.WriteLine($"{movie.Name,tSize}|" +
-                                 $"{movie.Date,-tSize}|" +
-                                 $"{movie.Genre,tSize}|" +
-                                 $"{movie.Studio,tSize}|" +
-                                 $"{movie.Director,tSize}|" +
-                                 $"{movie.Actors[0],tSize}|" +
-                                 $"{movie.Actors[1],tSize}|" +
-                                 $"{movie.Revenue,10}|");
+                for (int i = 0; i < user.GetMovieCount(); i++)
+                {
+                    IMDB movie = user.GetMovieByIndex(i);
+                    sw.WriteLine($"{movie.Name,tSize}{splitter}" +
+                                    $"{movie.Date,-tSize}{splitter}" +
+                                    $"{movie.Genre,tSize}{splitter}" +
+                                    $"{movie.Studio,tSize}{splitter}" +
+                                    $"{movie.Director,tSize}{splitter}" +
+                                    $"{movie.Actors[0],tSize}{splitter}" +
+                                    $"{movie.Actors[1],tSize}{splitter}" +
+                                    $"{movie.Revenue,10}{splitter}");
+                }
             }
+            else
+                sw.WriteLine("No Movies Found");
         }
         
         /// <summary>
         /// Writes Data to Output File
         /// </summary>
         /// <param name="movies">List IMDB Object</param>
-        /// <param name="ouputPath">Output File Path</param>
-        public static void PrintMoviesToCSV(this List<IMDB> movies, string ouputPath)
+        /// <param name="outputPath">Output File Path</param>
+        public static void PrintMoviesToCSV(this List<IMDB> movies, string outputPath)
         {
-            using (StreamWriter sw = new StreamWriter(ouputPath))
+            using (StreamWriter sw = new StreamWriter(outputPath))
             {
-                sw.WriteLine($"{"Name",tSize};{"Date",tSize};{"Studio",tSize}");
-                foreach (IMDB movie in movies)
-                    sw.WriteLine($"{movie.Name};{movie.Date};{movie.Studio}");
+                WriteMovieList(sw, new User("temp",DateTime.Today,"temp",movies), ';');
             }
 
         }
@@ -94,6 +116,10 @@ namespace Lab02
                     }
                     else // Adds a new User
                     {
+                        data = new string[3];
+                        data[0] = line;
+                        data[1] = sr.ReadLine();
+                        data[2] = sr.ReadLine().Trim();
                         user = new User(data[0], DateTime.Parse(data[1]), data[2]);
                         output.Add(user);
                     }
@@ -102,6 +128,32 @@ namespace Lab02
             }
 
             return output;
+        }
+
+        /// <summary>
+        /// Outputs movie genres to csv file
+        /// </summary>
+        /// <param name="outputFile"></param>
+        public static void OutputGenres(string outputFile)
+        {
+            List<string> genres = AllMovieInfo.GetAllGenres();
+            using (StreamWriter sw = new StreamWriter(outputFile))
+            {
+                if (genres.Count > 0)
+                {
+                    foreach (var genre in genres)
+                    {
+                        sw.Write(genre);
+                        foreach (IMDB imdb in AllMovieInfo.GetMoviesWithGenre(genre))
+                        {
+                            sw.Write($";{imdb.Name}");
+                        }
+                        sw.WriteLine();
+                    }
+                }
+                else
+                    sw.WriteLine("No Data Found");
+            }
         }
     }
 }

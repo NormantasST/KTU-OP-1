@@ -123,5 +123,66 @@ namespace Lab02
 
             DirectorPopularity[director]++;
         }
+
+        /// <summary>
+        /// Gets Movies that both users have seen
+        /// </summary>
+        /// <param name="user1"></param>
+        /// <param name="user2"></param>
+        /// <returns></returns>
+        public static List<IMDB> GetSeenWith(this User user1, User user2)
+        {
+            List<IMDB> output = new List<IMDB>();
+
+            for(int i = 0; i < user1.GetMovieCount(); i++)
+            {
+                IMDB imdb = user1.GetMovieByIndex(i);
+                if (MovieUsers[imdb].ContainsKey(user2))
+                    output.Add(imdb);
+            }
+
+            return output;
+        }
+
+        /// <summary>
+        /// Gets the most profitable movies
+        /// </summary>
+        public static List<IMDB> GetMostProfitable()
+        {
+            int profit = int.MinValue;
+            List<IMDB> output = new List<IMDB>();
+            foreach (IMDB imdb in AllMovies)
+            {
+                if(profit < imdb.Revenue)
+                {
+                    profit = imdb.Revenue;
+                    output.Clear();
+                }
+
+                if (profit == imdb.Revenue)
+                    output.Add(imdb);
+            }
+
+            return output;
+        }
+
+        /// <summary>
+        /// Returns all the keys of GenreSearch Object
+        /// </summary>
+        public static List<string> GetAllGenres()
+        {
+            return new List<string>(GenreSearch.Keys);
+        }
+
+        /// <summary>
+        /// Return all the movies with specified genre
+        /// </summary>
+        public static List<IMDB> GetMoviesWithGenre(string key)
+        {
+            if (GenreSearch.ContainsKey(key))
+                return GenreSearch[key];
+            else
+                return new List<IMDB>();
+        }
     }
 }

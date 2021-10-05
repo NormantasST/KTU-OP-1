@@ -75,11 +75,22 @@ namespace Lab02.Register
             Console.WriteLine(new string('-', 115));
             Console.WriteLine($"{"Reg.Nr.",fSize}|{"Vardas",fSize}|{"Veislė",fSize}|{"Gimimo data",fSize * 3 / 2}|{"Lytis",fSize}|");
             Console.WriteLine(new string('-', 115));
-            for (int i = 0; i < dogs.DogsCount(); i++)
+            for (int i = 1; i <= dogs.DogsCount(); i++)
             {
                 Dog dog = dogs.FindByIndex(i);
                 Console.WriteLine($"{dog.ID,-fSize}|{dog.Name,fSize}|{dog.Breed,fSize}|{dog.BirthDate,fSize*3/2}|{dog.Gender,fSize}|");
             }
+        }
+
+        public static void PrintDogsToConsole(List<Dog> dogs)
+        {
+            Console.WriteLine(new string('-', 115));
+            Console.WriteLine($"{"Reg.Nr.",fSize}|{"Vardas",fSize}|{"Veislė",fSize}|{"Gimimo data",fSize * 3 / 2}|{"Lytis",fSize}|");
+            Console.WriteLine(new string('-', 115));
+            foreach (Dog dog in dogs)
+                Console.WriteLine($"{dog.ID,-fSize}|{dog.Name,fSize}|{dog.Breed,fSize}|{dog.BirthDate,fSize * 3 / 2}|{dog.Gender,fSize}|");
+
+            
         }
 
         public static List<Vaccination> ReadVaccinations(string fileName)

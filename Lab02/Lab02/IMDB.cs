@@ -38,9 +38,48 @@ namespace Lab02
 
             Actors = new List<string>();
             Actors.Add(actor1);
-            Actors.Add(actor2);
+            Actors.Add(actor2); 
+        }
 
+        /// <summary>
+        /// Equals() Method Override
+        /// </summary>
+        public override bool Equals(object otherObj)
+        {
+            return this.Name == ((IMDB)otherObj).Name;
+        }
+
+
+        /// <summary>
+        /// Returns IMDB.Name's hashcode
+        /// </summary>
+        public override int GetHashCode()
+        {
+            return this.Name.GetHashCode();
+        }
+
+        /// <summary>
+        /// ToString() override
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString() => ToString('|');
+        
+
+        /// <summary>
+        /// ToString()
+        /// </summary>
+        /// <returns></returns>
+        public string ToString(char splitter)
+        {
             
-        }             
+            return  $"{this.Name,-20}{splitter}" +
+                    $"{this.Date,20}{splitter}" +
+                    $"{this.Genre,-20}{splitter}" +
+                    $"{this.Studio,-20}{splitter}" +
+                    $"{this.Director,-20}{splitter}" +
+                    $"{this.Actors[0],-20}{splitter}" +
+                    $"{this.Actors[1],-20}{splitter}" +
+                    $"{this.Revenue,10}{splitter}";
+        }
     }
 }

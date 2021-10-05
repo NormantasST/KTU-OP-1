@@ -36,7 +36,7 @@ namespace Lab02.Register
 
             try
             {
-                output = AllDogs[index];
+                output = AllDogs[index-1];
             }
             catch (Exception)
             {
@@ -138,7 +138,7 @@ namespace Lab02.Register
         {
             List<Dog> filtered = new List<Dog>();
             foreach (Dog dog in this.AllDogs)
-                if (dog.RequiresVaccination)
+                if (dog.RequiresVaccination())
                     filtered.Add(dog);
             
             return filtered;
@@ -149,7 +149,7 @@ namespace Lab02.Register
             foreach (Vaccination vaccination in Vaccinations)
             {
                 Dog dog = this.FindDogByID(vaccination.DogID);
-                if (vaccination > dog.LastVaccinationDate)
+                if (dog != null && vaccination > dog.LastVaccinationDate)
                 {
                     dog.LastVaccinationDate = vaccination.Date;
                 }

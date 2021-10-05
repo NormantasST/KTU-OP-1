@@ -11,6 +11,8 @@ namespace Lab02
     /// </summary>
     static class TaskUtils
     {
+        private const int tSize = -20;
+
         /// <summary>
         /// Prints Most Profitable Movies
         /// </summary>
@@ -93,5 +95,40 @@ namespace Lab02
 
             return output;
         }
+
+        /// <summary>
+        /// Print to screen function
+        /// </summary>
+        /// <param name="movies"></param>
+        public static void PrintToScreen(this List<IMDB> movies)
+        {
+            char splitter = '|';
+            Console.WriteLine("Most Profitable Movies");
+
+            if (movies.Count > 0)
+            {
+                Console.WriteLine($"{"Name",tSize}{splitter}" +
+                                $"{"Date",tSize}{splitter}" +
+                                $"{"Genre",tSize}{splitter}" +
+                                $"{"Studio",tSize}{splitter}" +
+                                $"{"Director",tSize}{splitter}" +
+                                $"{"Actor 1",tSize}{splitter}" +
+                                $"{"Actor 2",tSize}{splitter}" +
+                                $"{"Revenue",-10}{splitter}");
+
+                foreach (IMDB movie in movies)
+                    Console.WriteLine($"{movie.Name,tSize}{splitter}" +
+                                    $"{movie.Date,-tSize}{splitter}" +
+                                    $"{movie.Genre,tSize}{splitter}" +
+                                    $"{movie.Studio,tSize}{splitter}" +
+                                    $"{movie.Director,tSize}{splitter}" +
+                                    $"{movie.Actors[0],tSize}{splitter}" +
+                                    $"{movie.Actors[1],tSize}{splitter}" +
+                                    $"{movie.Revenue,10}{splitter}");
+            }
+            else
+                Console.WriteLine("No Movies Found");
+        }
+
     }
 }

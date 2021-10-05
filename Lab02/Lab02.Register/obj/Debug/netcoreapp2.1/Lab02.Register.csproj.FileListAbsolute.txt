@@ -1,0 +1,11 @@
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\bin\Debug\netcoreapp2.1\Lab02.Register.deps.json
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\bin\Debug\netcoreapp2.1\Lab02.Register.runtimeconfig.json
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\bin\Debug\netcoreapp2.1\Lab02.Register.runtimeconfig.dev.json
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\bin\Debug\netcoreapp2.1\Lab02.Register.dll
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\bin\Debug\netcoreapp2.1\Lab02.Register.pdb
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\obj\Debug\netcoreapp2.1\Lab02.Register.csprojAssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\obj\Debug\netcoreapp2.1\Lab02.Register.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\obj\Debug\netcoreapp2.1\Lab02.Register.AssemblyInfoInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\obj\Debug\netcoreapp2.1\Lab02.Register.AssemblyInfo.cs
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\obj\Debug\netcoreapp2.1\Lab02.Register.dll
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab02\Lab02.Register\obj\Debug\netcoreapp2.1\Lab02.Register.pdb
