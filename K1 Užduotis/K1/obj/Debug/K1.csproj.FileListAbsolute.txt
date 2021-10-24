@@ -1,0 +1,7 @@
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\bin\Debug\K1.exe.config
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\bin\Debug\K1.exe
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\bin\Debug\K1.pdb
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\obj\Debug\K1.csprojAssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\obj\Debug\K1.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\obj\Debug\K1.exe
+C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\K1\K1\obj\Debug\K1.pdb

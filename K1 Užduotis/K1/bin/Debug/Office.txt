@@ -1,0 +1,6 @@
+Firma3;proj.vadovas
+Firma1;testuotojas
+Firma4;programuotojas
+Firma6;sistem.administratorius
+Firma5;testuotojas
+Firma8;programuotojas

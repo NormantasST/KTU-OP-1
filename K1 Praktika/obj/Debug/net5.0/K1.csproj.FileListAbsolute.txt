@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\K1.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\K1.deps.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\K1.runtimeconfig.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\K1.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\K1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\ref\K1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\bin\Debug\net5.0\K1.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\ref\K1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\K1\obj\Debug\net5.0\K1.genruntimeconfig.cache

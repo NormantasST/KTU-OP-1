@@ -1,0 +1,13 @@
+Nera;Vardas1;proj.vadovas;3;8;false
+Nera;Vardas5;testuotojas;6;17;false
+Firma2;Vardas3;testuotojas;9;12;true
+Nera;Vardas2;sistem.administratorius;5;9;false
+Nera;Vardas6;programuotojas;2;5;false
+Nera;Vardas11;proj.vadovas;6;4;false
+Nera;Vardas12;sistem.administratorius;12;3;false
+Nera;Vardas7;testuotojas;6;19;false
+Nera;Vardas8;programuotojas;3;9;false
+Nera;Vardas86;programuotojas;5;16;false
+Nera;Vardas4;testuotojas;8;3;false
+Firma62;Vardas36;programuotojas;5;19;true
+Nera;Vardas22;programuotojas;3;9;false

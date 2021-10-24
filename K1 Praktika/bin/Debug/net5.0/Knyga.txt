@@ -1,0 +1,4 @@
+Firma2;Pav1;1;8,90
+Firma1;Pav1;2;5,80
+Firma1;Pav2;10;10,50
+Firma2;Pav3;100;1,60

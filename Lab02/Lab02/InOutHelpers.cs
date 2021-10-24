@@ -16,23 +16,31 @@ namespace Lab02
         private const int tSize = -20;
 
         /// <summary>
+        /// Creates output file from scratch
+        /// </summary>
+        /// <param name="outputPath"></param>
+        public static void CreateOutputFile(string outputPath)
+        {
+            if (File.Exists(outputPath))
+                File.Delete(outputPath);
+
+            StreamWriter sw = new StreamWriter(outputPath);
+            sw.WriteLine("Initial Data:");
+            sw.Close();
+        }
+
+
+        /// <summary>
         /// Writes Initial data from List User Object
         /// </summary>
-        public static void WriteInitialData(this List<User> users, string outputPath)
+        public static void WriteInitialData(this User user, string outputPath)
         {
-            using (StreamWriter sw = new StreamWriter(outputPath))
+            using (StreamWriter sw = new StreamWriter(outputPath, append:true))
             {
-                sw.WriteLine("Initial Data:");
-                if (users.Count > 0)
-                    foreach (User user in users)
-                    {
-                        sw.WriteLine();
-                        sw.WriteLine($"{user.Name,tSize}|{user.BirthDate,tSize}|{user.City,tSize}");
-                        sw.WriteLine();
-                        sw.WriteMovieList(user, '|');
-                    }
-                else
-                    sw.WriteLine("No Data Found");
+                sw.WriteLine();
+                sw.WriteLine($"{user.Name,tSize}|{user.BirthDate,tSize}|{user.City,tSize}");
+                sw.WriteLine();
+                sw.WriteMovieList(user, '|');
             }
         }
 
@@ -57,14 +65,7 @@ namespace Lab02
                 for (int i = 0; i < user.GetMovieCount(); i++)
                 {
                     IMDB movie = user.GetMovieByIndex(i);
-                    sw.WriteLine($"{movie.Name,tSize}{splitter}" +
-                                    $"{movie.Date,-tSize}{splitter}" +
-                                    $"{movie.Genre,tSize}{splitter}" +
-                                    $"{movie.Studio,tSize}{splitter}" +
-                                    $"{movie.Director,tSize}{splitter}" +
-                                    $"{movie.Actors[0],tSize}{splitter}" +
-                                    $"{movie.Actors[1],tSize}{splitter}" +
-                                    $"{movie.Revenue,10}{splitter}");
+                    sw.WriteLine(movie.ToString(splitter));
                 }
             }
             else
@@ -91,17 +92,25 @@ namespace Lab02
         /// </summary>
         /// <param name="filePath">Input File Object</param>
         /// <returns></returns>
-        public static List<User> ReadData(string filePath)
+        public static User Add(this List<User> list, string filePath)
         {
 
             List<User> output = new List<User>();
             using (StreamReader sr = new StreamReader(filePath))
             {
-                User user = null;
+                // Adds New User Data
+                string[] data = new string[3];
+                data[0] = sr.ReadLine();
+                data[1] = sr.ReadLine();
+                data[2] = sr.ReadLine().Trim();
+                User user = new User(data[0], DateTime.Parse(data[1]), data[2]);
+                list.Add(user);
+
+                // Adds User's Movies
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] data = line.Split(';');
+                    data = line.Split(';');
                     if (data.Length == 8) // Adds a movie for the user
                     {
                         IMDB imdb = new IMDB(data[0],
@@ -114,20 +123,10 @@ namespace Lab02
                                              int.Parse(data[7]));
                         user.AddMovie(imdb);
                     }
-                    else // Adds a new User
-                    {
-                        data = new string[3];
-                        data[0] = line;
-                        data[1] = sr.ReadLine();
-                        data[2] = sr.ReadLine().Trim();
-                        user = new User(data[0], DateTime.Parse(data[1]), data[2]);
-                        output.Add(user);
-                    }
-
                 }
-            }
 
-            return output;
+                return user;
+            }
         }
 
         /// <summary>
@@ -154,6 +153,33 @@ namespace Lab02
                 else
                     sw.WriteLine("No Data Found");
             }
+        }
+
+        /// <summary>
+        /// Print to screen function
+        /// </summary>
+        /// <param name="movies"></param>
+        public static void PrintToScreen(this List<IMDB> movies)
+        {
+            char splitter = '|';
+            Console.WriteLine("Most Profitable Movies");
+
+            if (movies.Count > 0)
+            {
+                Console.WriteLine($"{"Name",tSize}{splitter}" +
+                                $"{"Date",tSize}{splitter}" +
+                                $"{"Genre",tSize}{splitter}" +
+                                $"{"Studio",tSize}{splitter}" +
+                                $"{"Director",tSize}{splitter}" +
+                                $"{"Actor 1",tSize}{splitter}" +
+                                $"{"Actor 2",tSize}{splitter}" +
+                                $"{"Revenue",-10}{splitter}");
+
+                foreach (IMDB movie in movies)
+                    Console.WriteLine(movie.ToString(splitter));
+            }
+            else
+                Console.WriteLine("No Movies Found");
         }
     }
 }

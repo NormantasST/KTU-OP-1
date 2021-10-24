@@ -5,22 +5,28 @@ namespace Lab02
 {
     class Program
     {
-        const string CDdata = @"data2.txt";
+        const string CDdata1 = @"data2-1.txt";
+        const string CDdata2 = @"data2-2.txt";
         const string CDinitial = @"imdbInitial.txt";
         const string CDbothSeen = @"MatėAbu.csv";
         const string CDGenres = @"Žanrai.csv";
         static void Main(string[] args)
         {
-            List<User> users = InOutHelpers.ReadData(CDdata);
-            InOutHelpers.WriteInitialData(users, CDinitial);
+            InOutHelpers.CreateOutputFile(CDinitial);
+
+            List<User> users = new List<User>();
+            users.Add(CDdata1).WriteInitialData(CDinitial);
+            users.Add(CDdata2).WriteInitialData(CDinitial);
+
             users[0].GetSeenWith(users[1]).PrintMoviesToCSV(CDbothSeen);
             AllMovieInfo.GetMostProfitable().PrintToScreen();
             InOutHelpers.OutputGenres(CDGenres);
             Console.Read();
 
-            // Add User.AddFile(other files)
-            // If new user added, append new data
-            // Skaitym
+            int b = 1;
+            b.ToString();
+
         }
+
     }
 }
