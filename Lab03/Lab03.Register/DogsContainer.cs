@@ -10,14 +10,35 @@ namespace Lab03.Register
     {
         private Dog[] dogs;
         public int Count { get; private set; }
-        public DogsContainer()
+        public int Capacity { get; set; }
+        public DogsContainer(int capacity = 16)
         {
-            this.dogs = new Dog[16];//default capacity
+            this.dogs = new Dog[capacity];//default capacity
+            Capacity = capacity;
+            Count = 0;
         }
         public void Add(Dog dog)
         {
+            if (this.Count == this.Capacity) //container is full
+            {
+                EnsureCapacity(this.Capacity * 2);
+            }
             this.dogs[this.Count++] = dog;
         }
+
+        public void Sort()
+        {
+            for (int i = 0; i < Count - 1; i++)
+                for (int j = 0; j < Count - 1 - i; j++)
+                    if(dogs[j].CompareTo(dogs[j+1]) > 0)
+                    {
+                        Dog temp = dogs[j];
+                        dogs[j] = dogs[j + 1];
+                        dogs[j + 1] = temp;
+                    }
+        }
+
+
         public Dog Get(int index)
         {
             return this.dogs[index];
@@ -34,10 +55,27 @@ namespace Lab03.Register
             return false;
         }
 
-        public Dog Put(Dog dog, int index)
+        private void EnsureCapacity(int minimumCapacity)
         {
-            Dog otherDog = dogs[index];
+            if (minimumCapacity > this.Capacity)
+            {
+                Dog[] temp = new Dog[minimumCapacity];
+                for (int i = 0; i < this.Count; i++)
+                {
+                    temp[i] = this.dogs[i];
+                }
+                this.Capacity = minimumCapacity;
+                this.dogs = temp;
+            }
 
+        }
+            public Dog Put(Dog dog, int index)
+        {
+            index = CheckIndex(index);
+            if (index == Count)
+                Count++;
+
+            Dog otherDog = dogs[index];
             dogs[index] = dog;
 
             return otherDog;
@@ -45,6 +83,7 @@ namespace Lab03.Register
 
         public Dog Insert(Dog dog, int index)
         {
+            index = CheckIndex(index);
             for(int i = Count - 1; i >= index; i--)
             {
                 dogs[i + 1] = dogs[i];
@@ -69,16 +108,9 @@ namespace Lab03.Register
         public void Remove(Dog dog)
         {
             int index = FindIndex(dog);
-            if (index == -1)
-                return;
-            else
+            if (index != -1)
             {
-                dogs[index] = null;
-                Count--;
-                for (int i = index; i < Count-1; i++)
-                {
-                    dogs[index] = dogs[index + 1];
-                }
+                RemoveAt(index);
             }
         }
 
@@ -86,13 +118,20 @@ namespace Lab03.Register
         {
             if (index < Count)
             {
+                // Checks if element exists, if does, removes
+                for (int i = index; i < Count; i++)
+                    dogs[i] = dogs[i + 1];
+                dogs[Count] = null;
                 Count--;
-                dogs[index] = null;
-                for (int i = index; i < Count - 1; i++)
-                {
-                    dogs[index] = dogs[index + 1];
-                }
+
             }
+        }
+
+        private int CheckIndex(int index)
+        {
+            if (index >= Count)
+                return Count;
+            return index;
         }
 
 

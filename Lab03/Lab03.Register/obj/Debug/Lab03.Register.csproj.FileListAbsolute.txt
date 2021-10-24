@@ -5,3 +5,10 @@ C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab03\Lab03.Register\obj\Deb
 C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.csproj.CoreCompileInputs.cache
 C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.exe
 C:\Users\norsta\Desktop\KTU-OOP-Semester1-main-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\bin\Debug\Lab03.Register.exe.config
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\bin\Debug\Lab03.Register.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\bin\Debug\Lab03.Register.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03.Register\obj\Debug\Lab03.Register.pdb

@@ -49,6 +49,15 @@ namespace Lab03.Register
             this.Gender = gender;
         }
 
+        public int CompareTo(Dog other)
+        {
+            int comparison = Breed.CompareTo(other.Breed);
+            if (comparison == 0)
+                comparison = this.Gender.CompareTo(other.Gender);
+
+            return comparison;
+        }
+
         public override bool Equals(object other)
         {
             return this.ID == ((Dog)other).ID;
@@ -57,6 +66,11 @@ namespace Lab03.Register
         public override int GetHashCode()
         {
             return this.ID.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return $"{ID,10}|{Name,-20}|";
         }
     }
 }

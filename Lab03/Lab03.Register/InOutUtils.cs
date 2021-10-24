@@ -11,19 +11,26 @@ namespace Lab03.Register
         /// <summary>
         /// Prints Dogs to Console
         /// </summary>
-        public static void PrintDogs(List<Dog> Dogs)
+        public static void PrintDogs(string label, DogsContainer dogs)
         {
-            Console.WriteLine(new string('-', 74));
-            Console.WriteLine("| {0,8} | {1,-15} | {2,-15} | {3,-12} | {4,-8} |",
-           "Reg.Nr.", "Vardas", "Veislė", "Gimimo data", "Lytis");
-            Console.WriteLine(new string('-', 74));
-            foreach (Dog dog in Dogs)
-            {
-                Console.WriteLine("| {0,8} | {1,-15} | {2,-15} | {3,-12:yyyy-MM-dd} | {4,-8} |",
-               dog.ID, dog.Name, dog.Breed, dog.BirthDate, dog.Gender);
-            }
-            Console.WriteLine(new string('-', 74));
+             Console.WriteLine(new string('-', 74));
+             Console.WriteLine("| {0,-70} |", label);
+             Console.WriteLine(new string('-', 74));
+             Console.WriteLine("| {0,8} | {1,-15} | {2,-15} | {3,-12} | {4,-8} |",
+             "Reg.Nr.", "Vardas", "Veislė", "Gimimo data", "Lytis");
+
+             Console.WriteLine(new string('-', 74));
+
+             for (int i = 0; i < dogs.Count; i++)
+             {
+                 Dog dog = dogs.Get(i);
+                 Console.WriteLine("| {0,8} | {1,-15} | {2,-15} | {3,-12:yyyy-MM-dd} | {4,-8} |",
+                 dog.ID, dog.Name, dog.Breed, dog.BirthDate, dog.Gender);
+             }
+
+             Console.WriteLine(new string('-', 74));
         }
+
         public static void PrintBreeds(List<string> breeds)
         {
             foreach (string breed in breeds)
@@ -32,26 +39,26 @@ namespace Lab03.Register
             }
         }
 
-        public static DogsRegister ReadDogs(string fileName)
+        public static DogsContainer ReadDogs(string fileName)
         {
-            DogsRegister Dogs = new DogsRegister();
-            string[] Lines = File.ReadAllLines(fileName, Encoding.UTF8);
-            foreach (string line in Lines)
+            DogsContainer dogs = new DogsContainer();
+            string[] lines = File.ReadAllLines(fileName, Encoding.UTF8);
+            foreach (string line in lines)
             {
-                string[] Values = line.Split(';');
-                int id = int.Parse(Values[0]);
-                string name = Values[1];
-                string breed = Values[2];
-                DateTime birthDate = DateTime.Parse(Values[3]);
+                string[] values = line.Split(';');
+                int id = int.Parse(values[0]);
+                string name = values[1];
+                string breed = values[2];
+                DateTime birthDate = DateTime.Parse(values[3]);
                 Gender gender;
-                Enum.TryParse(Values[4], out gender); //tries to convert value to enum
+                Enum.TryParse(values[4], out gender); //tries to convert value to enum
                 Dog dog = new Dog(id, name, breed, birthDate, gender);
-                if (!Dogs.Contains(dog))
+                if (!dogs.Contains(dog))
                 {
-                    Dogs.Add(dog);
+                    dogs.Add(dog);
                 }
             }
-            return Dogs;
+            return dogs;
         }
 
         public static void PrintDogsToCSVFile(string fileName, List<Dog> Dogs)

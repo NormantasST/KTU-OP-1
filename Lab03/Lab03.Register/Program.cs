@@ -8,22 +8,78 @@ namespace Lab03.Register
         private const int index = 1;
         static void Main(string[] args)
         {
+
+            /*
+            // Testing Sav1
             DogsContainer dc = new DogsContainer();
 
-            dc.Add(new Dog(1,"a","a",DateTime.Today, Gender.Male));
-            Console.WriteLine(dc.Get(0).ID);
-            dc.Insert(new Dog(2, "b", "a", DateTime.Today, Gender.Male),1);
-            Console.WriteLine(dc.Get(0).ID);
-            dc.Put(new Dog(3, "c", "a", DateTime.Today, Gender.Male), 0);
-            Console.WriteLine(dc.Get(0).ID);
-            Console.WriteLine(dc.Get(1).ID);
+            Console.WriteLine("Pradiniai testai");
+
+            dc.Add(new Dog(1, "a", "a", DateTime.Today, Gender.Male));
+            dc.Add(new Dog(2, "a", "a", DateTime.Today, Gender.Male));
+            dc.Add(new Dog(3, "a", "a", DateTime.Today, Gender.Male));
+            dc.Add(new Dog(4, "a", "a", DateTime.Today, Gender.Male));
+            dc.Add(new Dog(5, "a", "a", DateTime.Today, Gender.Male));
+
+            for (int i = 0; i < dc.Count; i++)
+            {
+                Console.WriteLine(dc.Get(i).ID);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Insert");
+            
+            dc.Insert(new Dog(0, "b", "a", DateTime.Today, Gender.Male),0);
+            dc.Insert(new Dog(-3, "b", "a", DateTime.Today, Gender.Male), 2);
+            dc.Insert(new Dog(-1, "b", "a", DateTime.Today, Gender.Male), 1);
+            dc.Insert(new Dog(-100, "b", "a", DateTime.Today, Gender.Male), 100);
+            for (int i = 0; i < dc.Count; i++)
+            {
+                Console.WriteLine(dc.Get(i).ID);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("Put");
+
+            dc.Put(new Dog(-101, "b", "a", DateTime.Today, Gender.Male), 100);
+            dc.Put(new Dog(-102, "b", "a", DateTime.Today, Gender.Male), dc.Count);
+            dc.Put(new Dog(-103, "b", "a", DateTime.Today, Gender.Male), 0);
+
+            for (int i = 0; i < dc.Count; i++)
+            {
+                Console.WriteLine(dc.Get(i).ID);
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("RemoveAt");
 
             dc.RemoveAt(0);
-            Console.WriteLine(dc.Count);
-            Console.WriteLine(dc.Get(0).ID);
-            Console.WriteLine(dc.Count);
+            dc.RemoveAt(100);
+            dc.RemoveAt(1);
+            dc.RemoveAt(dc.Count - 1);
+            for (int i = 0; i < dc.Count; i++)
+            {
+                Console.WriteLine(dc.Get(i).ID);
+            }
 
-            //dc.Remove();
+            Console.WriteLine();
+            Console.WriteLine("Remove  (All Except first)");
+
+            for (int i = dc.Count - 1; i > 0; i--)
+            {
+                dc.Remove(dc.Get(i));
+                Console.WriteLine($"Removed {i}");
+            }
+
+            Console.WriteLine($"First Element (0) Value is: {dc.Get(0)}");
+            Console.WriteLine($"Count: {dc.Count}");
+
+            */
+
+            DogsContainer allDogs = InOutUtils.ReadDogs(@"Dogs.csv");
+            allDogs.Sort();
+
+            InOutUtils.PrintDogs("Rikiutoi:", allDogs);
 
             Console.Read();
 
