@@ -51,9 +51,9 @@ namespace Lab03.Register
 
         public int CompareTo(Dog other)
         {
-            int comparison = Breed.CompareTo(other.Breed);
+            int comparison = this.Gender.CompareTo(other.Gender);
             if (comparison == 0)
-                comparison = this.Gender.CompareTo(other.Gender);
+                comparison = Breed.CompareTo(other.Breed);
 
             return comparison;
         }

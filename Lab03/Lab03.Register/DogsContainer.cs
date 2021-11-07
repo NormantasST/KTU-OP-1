@@ -17,6 +17,14 @@ namespace Lab03.Register
             Capacity = capacity;
             Count = 0;
         }
+
+        public DogsContainer(DogsContainer container) : this(capacity: container.Capacity) //calls another constructor
+        {
+            for (int i = 0; i < container.Count; i++)
+            {
+                this.Add(container.Get(i));
+            }
+        }
         public void Add(Dog dog)
         {
             if (this.Count == this.Capacity) //container is full
@@ -37,7 +45,6 @@ namespace Lab03.Register
                         dogs[j + 1] = temp;
                     }
         }
-
 
         public Dog Get(int index)
         {
@@ -60,7 +67,7 @@ namespace Lab03.Register
             if (minimumCapacity > this.Capacity)
             {
                 Dog[] temp = new Dog[minimumCapacity];
-                for (int i = 0; i < this.Count; i++)
+                for (int i = 0; i < this.Count; i++) // Shallow Copy
                 {
                     temp[i] = this.dogs[i];
                 }
@@ -69,11 +76,17 @@ namespace Lab03.Register
             }
 
         }
-            public Dog Put(Dog dog, int index)
+        public Dog Put(Dog dog, int index)
         {
             index = CheckIndex(index);
             if (index == Count)
+            {
+                if (this.Count == this.Capacity) //container is full
+                {
+                    EnsureCapacity(this.Capacity * 2);
+                }
                 Count++;
+            }
 
             Dog otherDog = dogs[index];
             dogs[index] = dog;
@@ -83,6 +96,11 @@ namespace Lab03.Register
 
         public Dog Insert(Dog dog, int index)
         {
+            if (this.Count == this.Capacity) //container is full
+            {
+                EnsureCapacity(this.Capacity * 2);
+            }
+
             index = CheckIndex(index);
             for(int i = Count - 1; i >= index; i--)
             {
@@ -134,6 +152,18 @@ namespace Lab03.Register
             return index;
         }
 
-
+        public DogsContainer Intersect(DogsContainer other)
+        {
+            DogsContainer result = new DogsContainer();
+            for (int i = 0; i < this.Count; i++)
+            {
+                Dog current = this.dogs[i];
+                if (other.Contains(current))
+                {
+                    result.Add(current);
+                }
+            }
+            return result;
+        }
     }
 }

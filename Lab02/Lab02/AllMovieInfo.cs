@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab02
+namespace Lab03
 {
     /// <summary>
     /// Saves Important Information For ALL IMDB Class Objects
     /// </summary>
     static class AllMovieInfo
     {
-        private static List<IMDB> AllMovies { get; set; }
+        private static IMDBContainer AllMovies { get; set; }
         private static Dictionary<string, int> DirectorPopularity;
         private static Dictionary<string, IMDB> MovieTitleSearch;
-        private static Dictionary<string, List<IMDB>> GenreSearch;
+        private static Dictionary<string, IMDBContainer> GenreSearch;
         private static Dictionary<IMDB, Dictionary<User, bool>> MovieUsers; // First Key -> Movie, Second Key - User, Returns if the User Has seen the movie
         static AllMovieInfo()
         {
-            AllMovies = new List<IMDB>();
+            AllMovies = new IMDBContainer();
             DirectorPopularity = new Dictionary<string, int>();
             MovieTitleSearch = new Dictionary<string, IMDB>();
             MovieUsers = new Dictionary<IMDB, Dictionary<User, bool>>();
-            GenreSearch = new Dictionary<string, List<IMDB>>();
+            GenreSearch = new Dictionary<string, IMDBContainer>();
         }
 
         /// <summary>
@@ -81,7 +81,7 @@ namespace Lab02
         private static void AddToGenre(IMDB imdb)
         {
             if (!GenreSearch.ContainsKey(imdb.Genre)) // Adds the genre if it does not exist
-                GenreSearch.Add(imdb.Genre, new List<IMDB>());
+                GenreSearch.Add(imdb.Genre, new IMDBContainer());
             GenreSearch[imdb.Genre].Add(imdb);
 
         }
@@ -130,9 +130,9 @@ namespace Lab02
         /// <param name="user1"></param>
         /// <param name="user2"></param>
         /// <returns></returns>
-        public static List<IMDB> GetSeenWith(this User user1, User user2)
+        public static IMDBContainer GetSeenWith(this User user1, User user2)
         {
-            List<IMDB> output = new List<IMDB>();
+            IMDBContainer output = new IMDBContainer();
 
             for(int i = 0; i < user1.GetMovieCount(); i++)
             {
@@ -147,12 +147,13 @@ namespace Lab02
         /// <summary>
         /// Gets the most profitable movies
         /// </summary>
-        public static List<IMDB> GetMostProfitable()
+        public static IMDBContainer GetMostProfitable()
         {
             int profit = int.MinValue;
-            List<IMDB> output = new List<IMDB>();
-            foreach (IMDB imdb in AllMovies)
+            IMDBContainer output = new IMDBContainer();
+            for (int i = 0; i < AllMovies.Count; i++)
             {
+                IMDB imdb = AllMovies.Get(i);
                 if(profit < imdb.Revenue)
                 {
                     profit = imdb.Revenue;
@@ -169,20 +170,20 @@ namespace Lab02
         /// <summary>
         /// Returns all the keys of GenreSearch Object
         /// </summary>
-        public static List<string> GetAllGenres()
+        public static string[] GetAllGenres()
         {
-            return new List<string>(GenreSearch.Keys);
+            return GenreSearch.Keys.ToArray();
         }
 
         /// <summary>
         /// Return all the movies with specified genre
         /// </summary>
-        public static List<IMDB> GetMoviesWithGenre(string key)
+        public static IMDBContainer GetMoviesWithGenre(string key)
         {
             if (GenreSearch.ContainsKey(key))
                 return GenreSearch[key];
             else
-                return new List<IMDB>();
+                return new IMDBContainer();
         }
     }
 }

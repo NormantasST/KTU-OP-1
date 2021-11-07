@@ -1,11 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab02
+namespace Lab03
 {
     /// <summary>
     /// File Input Output Helper
@@ -77,11 +76,11 @@ namespace Lab02
         /// </summary>
         /// <param name="movies">List IMDB Object</param>
         /// <param name="outputPath">Output File Path</param>
-        public static void PrintMoviesToCSV(this List<IMDB> movies, string outputPath)
+        public static void PrintMoviesToCSV(this IMDBContainer movies, string outputPath)
         {
             using (StreamWriter sw = new StreamWriter(outputPath))
             {
-                WriteMovieList(sw, new User("temp",DateTime.Today,"temp",movies), ';');
+                WriteMovieList(sw, new User("temp",DateTime.Today,"temp", movies), ';');
             }
 
         }
@@ -92,10 +91,9 @@ namespace Lab02
         /// </summary>
         /// <param name="filePath">Input File Object</param>
         /// <returns></returns>
-        public static User Add(this List<User> list, string filePath)
+        public static User ReadUser(string filePath)
         {
-
-            List<User> output = new List<User>();
+            User user;
             using (StreamReader sr = new StreamReader(filePath))
             {
                 // Adds New User Data
@@ -103,8 +101,7 @@ namespace Lab02
                 data[0] = sr.ReadLine();
                 data[1] = sr.ReadLine();
                 data[2] = sr.ReadLine().Trim();
-                User user = new User(data[0], DateTime.Parse(data[1]), data[2]);
-                list.Add(user);
+                user = new User(data[0], DateTime.Parse(data[1]), data[2]);
 
                 // Adds User's Movies
                 string line;
@@ -125,8 +122,8 @@ namespace Lab02
                     }
                 }
 
-                return user;
             }
+            return user;
         }
 
         /// <summary>
@@ -135,16 +132,18 @@ namespace Lab02
         /// <param name="outputFile"></param>
         public static void OutputGenres(string outputFile)
         {
-            List<string> genres = AllMovieInfo.GetAllGenres();
+            string[] genres = AllMovieInfo.GetAllGenres();
             using (StreamWriter sw = new StreamWriter(outputFile))
             {
-                if (genres.Count > 0)
+                if (genres.Length > 0)
                 {
                     foreach (var genre in genres)
                     {
                         sw.Write(genre);
-                        foreach (IMDB imdb in AllMovieInfo.GetMoviesWithGenre(genre))
+                        IMDBContainer genreCollection = AllMovieInfo.GetMoviesWithGenre(genre);
+                        for (int i = 0; i < genreCollection.Count; i++)
                         {
+                            IMDB imdb = genreCollection[i];
                             sw.Write($";{imdb.Name}");
                         }
                         sw.WriteLine();
@@ -159,7 +158,7 @@ namespace Lab02
         /// Print to screen function
         /// </summary>
         /// <param name="movies"></param>
-        public static void PrintToScreen(this List<IMDB> movies)
+        public static void PrintToScreen(this IMDBContainer movies)
         {
             char splitter = '|';
             Console.WriteLine("Most Profitable Movies");

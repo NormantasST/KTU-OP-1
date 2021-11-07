@@ -1,8 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Text;
 
-namespace Lab02
+namespace Lab03
 {
     /// <summary>
     /// User Class Object.
@@ -13,19 +12,18 @@ namespace Lab02
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
         public string City { get; set; }
-        //public List<IMDB> Movies { get { return movies; } }
 
-        private List<IMDB> movies;
+        private IMDBContainer movies;
 
         public User(string name, DateTime birthDate, string city)
         {
             City = city;
             Name = name;
-            movies = new List<IMDB>();
+            movies = new IMDBContainer();
             BirthDate = birthDate;
         }
 
-        public User(string name, DateTime birthDate, string city, List<IMDB> _movies)
+        public User(string name, DateTime birthDate, string city, IMDBContainer _movies)
         {
             City = city;
             Name = name;
@@ -55,7 +53,7 @@ namespace Lab02
         {
             try
             {
-                return movies[index];
+                return movies.Get(index);
             }
             catch (Exception)
             {

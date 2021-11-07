@@ -1,0 +1,7 @@
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\bin\Debug\Lab03Sav.exe.config
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\bin\Debug\Lab03Sav.exe
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\bin\Debug\Lab03Sav.pdb
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\obj\Debug\Lab03Sav.csprojAssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\obj\Debug\Lab03Sav.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\obj\Debug\Lab03Sav.exe
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03Sav\obj\Debug\Lab03Sav.pdb

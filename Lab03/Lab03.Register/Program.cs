@@ -9,7 +9,7 @@ namespace Lab03.Register
         static void Main(string[] args)
         {
 
-            /*
+            
             // Testing Sav1
             DogsContainer dc = new DogsContainer();
 
@@ -74,13 +74,18 @@ namespace Lab03.Register
             Console.WriteLine($"First Element (0) Value is: {dc.Get(0)}");
             Console.WriteLine($"Count: {dc.Count}");
 
-            */
 
+            
             DogsContainer allDogs = InOutUtils.ReadDogs(@"Dogs.csv");
+            InOutUtils.PrintDogs("ner:", allDogs);
             allDogs.Sort();
+
+            DogsContainer newDogs = new DogsContainer(allDogs);
 
             InOutUtils.PrintDogs("Rikiutoi:", allDogs);
 
+            InOutUtils.PrintDogs("Copy", newDogs);
+            
             Console.Read();
 
         }

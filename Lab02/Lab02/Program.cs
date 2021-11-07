@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 
-namespace Lab02
+namespace Lab03
 {
     class Program
     {
@@ -12,20 +11,9 @@ namespace Lab02
         const string CDGenres = @"Žanrai.csv";
         static void Main(string[] args)
         {
-            InOutHelpers.CreateOutputFile(CDinitial);
-
-            List<User> users = new List<User>();
-            users.Add(CDdata1).WriteInitialData(CDinitial);
-            users.Add(CDdata2).WriteInitialData(CDinitial);
-
-            users[0].GetSeenWith(users[1]).PrintMoviesToCSV(CDbothSeen);
-            AllMovieInfo.GetMostProfitable().PrintToScreen();
-            InOutHelpers.OutputGenres(CDGenres);
+            // Selection Sort
+            User
             Console.Read();
-
-            int b = 1;
-            b.ToString();
-
         }
 
     }
