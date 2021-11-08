@@ -5,7 +5,7 @@ namespace Lab03
 {
     class IMDBContainer
     {
-        
+
         private IMDB[] Movies;
         public int Count { get; private set; }
         public int Capacity { get; set; }
@@ -92,7 +92,7 @@ namespace Lab03
             }
 
             Count++;
-        Movies[index] = dog;
+            Movies[index] = dog;
 
             return dog;
         }
@@ -135,6 +135,22 @@ namespace Lab03
                 return Count;
             return index;
         }
+        public IMDBContainer Sort()
+        {
+            for (int i = 0; i < Count - 1; i++)
+            {
+                int min_idx = i;
+                for (int j = i + 1; j < Count; j++)
+                    if (Movies[j].CompareTo(Movies[min_idx]) < 0)
+                        min_idx = j;
+
+                IMDB temp = Movies[min_idx];
+                Movies[min_idx] = Movies[i];
+                Movies[i] = temp;
+            }
+
+            return this;
+        }
 
         public void Clear(int capacity = 16)
         {
@@ -143,9 +159,6 @@ namespace Lab03
             Count = 0;
         }
 
-        public static void Sort()
-        {
-            throw new Exception("SelectionSort Not Implemented");
-        }
+      
     }
 }

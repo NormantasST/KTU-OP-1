@@ -18,7 +18,7 @@ namespace Lab03Sav
             GroupContainer groups = students.GetGroups();
             groups.UpdateGroups(students);
             groups.Sort();
-            InOut.WriteData(CDoutput, groups, "Iðrikiuotos grupës pagal vidurkius, pavadinimus");
+            InOut.WriteData(CDoutput, groups, "Iï¿½rikiuotos grupï¿½s pagal vidurkius, pavadinimus");
         }
     }
 }

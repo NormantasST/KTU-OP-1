@@ -83,5 +83,37 @@ namespace Lab03
         {
             return $"{this.Name} {this.BirthDate} {this.City}";
         }
+
+        public string[] GetFavoriteDirector()
+        {
+            string[] names = new string[movies.Count];
+            int moviesDirected = 0;
+            int n = 0;
+
+            for (int i = 0; i < movies.Count; i++)
+            {
+                string currName = movies.Get(i).Director;
+                int currDirectedCount = 0;
+                for (int j = i; j < movies.Count; j++)
+                    if (movies.Get(j).Director == currName)
+                        currDirectedCount++;
+
+                // Resets
+                if (currDirectedCount > moviesDirected)
+                {
+                    moviesDirected = currDirectedCount;
+                    names = new string[movies.Count];
+                }
+
+                // Adds users
+                if (currDirectedCount == moviesDirected)
+                    names[n++] = currName;          
+            }
+
+            string[] output = new string[n];
+            Array.Copy(names, output, n);
+
+            return output;
+        }
     }
 }

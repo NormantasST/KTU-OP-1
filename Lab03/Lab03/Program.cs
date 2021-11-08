@@ -19,12 +19,12 @@ namespace Lab03
             user2.WriteInitialData(CDoutput);
 
             InOutHelpers.PrintToScreen(AllMovieInfo.GetMostProfitable(), "Most Profitable Movies:");
+            InOutHelpers.PrintStrings(user1.GetFavoriteDirector(), $"{user1.Name} Favorite Director(s):");
+            InOutHelpers.PrintStrings(user2.GetFavoriteDirector(), $"{user2.Name} Favorite Director(s):");
             InOutHelpers.OutputGenres(CDGenres);
             InOutHelpers.ReccomendMovies(user1);
             InOutHelpers.ReccomendMovies(user2);
             
-            // Selection sort and Sort ReccomendMovies
-            // Add Favorite Director
         }
 
     }

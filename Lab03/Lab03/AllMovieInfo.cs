@@ -152,6 +152,8 @@ namespace Lab03
                     output.Add(imdb);
             }
 
+            output.Sort();
+
             return output;
         }
 

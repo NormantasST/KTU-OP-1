@@ -164,6 +164,17 @@ namespace Lab03
             }
             else
                 Console.WriteLine("No Movies Found");
+
+            Console.WriteLine();
+        }
+
+        public static void PrintStrings(string[] strings, string header)
+        {
+            Console.WriteLine(header);
+            for (int i = 0; i < strings.Length; i++)
+                Console.WriteLine(strings[i]);
+
+            Console.WriteLine();
         }
 
         public static void ReccomendMovies(User user)

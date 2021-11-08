@@ -11,7 +11,7 @@ Informatikos Fakultetas
 |Mikas               |Tomas               |IFF-1/6   |         4|  1   2   3   4 
 |Omas                |Topas               |IFF-1/6   |         1|  1 
 
-Išrikiuotos grupės pagal vidurkius, pavadinimus
+I�rikiuotos grup�s pagal vidurkius, pavadinimus
 --------------------------------------------------------------------------------------------
 Average   |Name                
 --------------------------------------------------------------------------------------------
