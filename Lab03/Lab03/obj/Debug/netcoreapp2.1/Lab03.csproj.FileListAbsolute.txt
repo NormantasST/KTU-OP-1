@@ -11,3 +11,14 @@ C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03\obj\Debug\netcoreapp2.
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.pdb
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.genruntimeconfig.cache
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.csproj.AssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\bin\Debug\netcoreapp2.1\Lab03.deps.json
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\bin\Debug\netcoreapp2.1\Lab03.runtimeconfig.json
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\bin\Debug\netcoreapp2.1\Lab03.runtimeconfig.dev.json
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\bin\Debug\netcoreapp2.1\Lab03.dll
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\bin\Debug\netcoreapp2.1\Lab03.pdb
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.csprojAssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.AssemblyInfoInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.AssemblyInfo.cs
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.dll
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab03\Lab03\obj\Debug\netcoreapp2.1\Lab03.pdb

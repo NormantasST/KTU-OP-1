@@ -3,6 +3,10 @@ using System.Text;
 
 namespace Lab03
 {
+
+    /// <summary>
+    /// IMDB Container Code
+    /// </summary>
     class IMDBContainer
     {
 
@@ -16,6 +20,9 @@ namespace Lab03
             Count = 0;
         }
 
+        /// <summary>
+        /// IMDB Container Code
+        /// </summary>
         public IMDBContainer(IMDBContainer container) : this(capacity: container.Capacity) //calls another constructor
         {
             for (int i = 0; i < container.Count; i++)
@@ -23,6 +30,10 @@ namespace Lab03
                 this.Add(container.Get(i));
             }
         }
+
+        /// <summary>
+        /// IMDB Container Add
+        /// </summary>
         public void Add(IMDB imdb)
         {
             if (this.Count == this.Capacity) //container is full
@@ -32,10 +43,17 @@ namespace Lab03
             this.Movies[this.Count++] = imdb;
         }
 
+        /// <summary>
+        /// Get by Index function
+        /// </summary>
         public IMDB Get(int index)
         {
             return this.Movies[index];
         }
+
+        /// <summary>
+        /// Contains Implementation
+        /// </summary>
         public bool Contains(IMDB idmb)
         {
             for (int i = 0; i < this.Count; i++)
@@ -46,6 +64,9 @@ namespace Lab03
             return false;
         }
 
+        /// <summary>
+        /// Ensure Capacity Implementation
+        /// </summary>
         private void EnsureCapacity(int minimumCapacity)
         {
             if (minimumCapacity > this.Capacity)
@@ -60,6 +81,10 @@ namespace Lab03
             }
 
         }
+
+        /// <summary>
+        /// Put Function Container
+        /// </summary>
         public IMDB Put(IMDB imdb, int index)
         {
             index = CheckIndex(index);
@@ -78,6 +103,9 @@ namespace Lab03
             return otherDog;
         }
 
+        /// <summary>
+        /// Insert Implementation
+        /// </summary>
         public IMDB Insert(IMDB dog, int index)
         {
             if (this.Count == this.Capacity) //container is full
@@ -97,6 +125,9 @@ namespace Lab03
             return dog;
         }
 
+        /// <summary>
+        /// FindIndex Container Implementation
+        /// </summary>
         public int FindIndex(IMDB imdb)
         {
             for (int i = 0; i < Count; i++)
@@ -107,6 +138,9 @@ namespace Lab03
             return -1;
         }
 
+        /// <summary>
+        /// Remove Container Implementation
+        /// </summary>
         public void Remove(IMDB imdb)
         {
             int index = FindIndex(imdb);
@@ -116,6 +150,9 @@ namespace Lab03
             }
         }
 
+        /// <summary>
+        /// RemoveAt implementation
+        /// </summary>
         public void RemoveAt(int index)
         {
             if (index < Count)
@@ -129,12 +166,19 @@ namespace Lab03
             }
         }
 
+        /// <summary>
+        /// CheckIndex if the index exists implementation
+        /// </summary>
         private int CheckIndex(int index)
         {
             if (index >= Count)
                 return Count;
             return index;
         }
+
+        /// <summary>
+        /// Selection Sort implementation
+        /// </summary>
         public IMDBContainer Sort()
         {
             for (int i = 0; i < Count - 1; i++)
@@ -152,6 +196,10 @@ namespace Lab03
             return this;
         }
 
+
+        /// <summary>
+        /// Clears the Container
+        /// </summary>
         public void Clear(int capacity = 16)
         {
             this.Movies = new IMDB[capacity];//default capacity
@@ -159,6 +207,12 @@ namespace Lab03
             Count = 0;
         }
 
-      
+        /// <summary>
+        /// ToString implementation
+        /// </summary>
+        public override string ToString()
+        {
+            return $"Element Count: {Count} Element Capacity: {Capacity}";
+        }
     }
 }

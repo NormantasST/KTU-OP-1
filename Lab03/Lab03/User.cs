@@ -25,6 +25,9 @@ namespace Lab03
             BirthDate = birthDate;
         }
 
+        /// <summary>
+        /// User Constructor with IMDBContainer 
+        /// </summary>
         public User(string name, DateTime birthDate, string city, IMDBContainer _movies)
         {
             City = city;
@@ -46,6 +49,9 @@ namespace Lab03
             movies.Add(imdb); // Adds the movie to this User's catologue
         }
 
+        /// <summary>
+        /// Returns MovieCount
+        /// </summary>
         public int GetMovieCount()
         {
             return movies.Count;
@@ -84,6 +90,9 @@ namespace Lab03
             return $"{this.Name} {this.BirthDate} {this.City}";
         }
 
+        /// <summary>
+        /// GetsFavorite Director for provided User
+        /// </summary>
         public string[] GetFavoriteDirector()
         {
             string[] names = new string[movies.Count];
@@ -103,11 +112,15 @@ namespace Lab03
                 {
                     moviesDirected = currDirectedCount;
                     names = new string[movies.Count];
+                    n = 0;
                 }
 
                 // Adds users
                 if (currDirectedCount == moviesDirected)
-                    names[n++] = currName;          
+                {
+                    names[n] = currName;
+                    n++;
+                }
             }
 
             string[] output = new string[n];

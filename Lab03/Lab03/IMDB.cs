@@ -20,6 +20,10 @@ namespace Lab03
         public List<string> Actors   { get; set; }
         public int          Revenue  { get; set; }
         
+
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public IMDB(string name,
                     int    date,
                     string genre,
@@ -82,6 +86,9 @@ namespace Lab03
                     $"{this.Revenue,10}{splitter}";
         }
 
+        /// <summary>
+        /// CompareTo Override
+        /// </summary>
         public int CompareTo(IMDB other)
         {
             return Revenue.CompareTo(other.Revenue);

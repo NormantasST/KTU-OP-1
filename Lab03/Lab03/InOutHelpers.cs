@@ -168,6 +168,9 @@ namespace Lab03
             Console.WriteLine();
         }
 
+        /// <summary>
+        /// Prints String[] to Console, With provided header at the top
+        /// </summary>
         public static void PrintStrings(string[] strings, string header)
         {
             Console.WriteLine(header);
@@ -177,6 +180,10 @@ namespace Lab03
             Console.WriteLine();
         }
 
+
+        /// <summary>
+        /// Reccomends User movies. Outputs to "[FirstName]_[LastName].csv" file format.
+        /// </summary>
         public static void ReccomendMovies(User user)
         {
             string[] nameElements = user.Name.Split(' ');
