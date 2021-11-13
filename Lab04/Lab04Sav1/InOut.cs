@@ -7,23 +7,35 @@ using System.Threading.Tasks;
 
 namespace Lab04Sav1
 {
-    class InOut
+    static class InOut
     {
-        public static void PrintRepetitions(string fout, LetterFrequency letters)
+        public static void RepetitionsSorted(string fout, LettersFrequency letters)
         {
-            using (StreamWriter sw = new StreamWriter(fout))
-                foreach (char letter in letters.Alphabet)
-                    sw.WriteLine($"{letter,3} {letters.Get(letter),3} | {Char.ToLower(letter),3} {letters.Get(Char.ToLower(letter)),3}");
-            
-        }
-        public static void Repetitions(string fin, LetterFrequency letters)
-        {
-            using (StreamReader reader = new StreamReader(fin))
+            using (var writer = File.CreateText(fout))
             {
-                string line;
-                while ((line = reader.ReadLine()) != null)
-                    foreach (char letter in line)
-                        letters.Add(letter);
+                char[] sortedLetters = letters.GetSortedLetterString();
+                foreach (char ch in sortedLetters)
+                {
+                    writer.WriteLine("{0, 3:c} {1, 4:d} |{2, 3:c} {3, 4:d}", ch,
+                    letters.Get(ch), Char.ToUpper(ch), letters.Get(Char.ToUpper(ch)));
+                }
+            }
+        }
+
+        public static void Repetitions(string fin, LettersFrequency letters)
+        {
+            foreach (string line in File.ReadAllLines(fin))
+                foreach (char ch in line)
+                    letters.Add(ch);
+        }
+
+        public static void PrintRepetitions(string fout, LettersFrequency letters)
+        {
+            using (var writer = File.CreateText(fout))
+            {
+                foreach (char ch in letters.Alphabet)
+                    writer.WriteLine("{0, 3:c} {1, 4:d} |{2, 3:c} {3, 4:d}", ch,
+                   letters.Get(ch), Char.ToUpper(ch), letters.Get(Char.ToUpper(ch)));
             }
         }
     }

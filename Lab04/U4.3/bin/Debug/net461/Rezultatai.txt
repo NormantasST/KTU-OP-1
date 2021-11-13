@@ -1,0 +1,14 @@
+void DuomenysInternet(Grybai & grybai)
+        {
+            
+            StreamReader sw = new StreamReader("text");
+            
+            
+            int ns = 0;
+            
+                string helloWorld =  "World";
+            
+            }
+
+            sw.close();
+         }
