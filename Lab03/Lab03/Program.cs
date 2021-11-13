@@ -33,6 +33,13 @@ namespace Lab03
             InOutHelpers.ReccomendMovies(user1);
             InOutHelpers.ReccomendMovies(user2);
 
+            int maxValue = 0;
+            string[] output = new string[Count];
+            for (int i = 0; i < length; i++)
+            {
+
+            }
+
             Console.Read();
         }
 

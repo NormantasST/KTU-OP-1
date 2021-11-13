@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Lab04Sav1/1.0.0": {
+        "runtime": {
+          "Lab04Sav1.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Lab04Sav1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

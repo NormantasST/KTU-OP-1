@@ -1,0 +1,15 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\U4.1.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\U4.1.deps.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\U4.1.runtimeconfig.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\U4.1.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\U4.1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\ref\U4.1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\bin\Debug\net5.0\U4.1.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\ref\U4.1.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\U4.1\obj\Debug\net5.0\U4.1.genruntimeconfig.cache

@@ -187,6 +187,8 @@ namespace Lab03
                 for (int j = i + 1; j < Count; j++)
                     if (Movies[j].CompareTo(Movies[min_idx]) < 0)
                         min_idx = j;
+                
+                        
 
                 IMDB temp = Movies[min_idx];
                 Movies[min_idx] = Movies[i];
