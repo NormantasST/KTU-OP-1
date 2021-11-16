@@ -25,6 +25,7 @@ namespace Lab04Sav3
             foreach (Match match in Regex.Matches(line, regex, RegexOptions.ECMAScript))
             {
                 string word = match.Value;
+                Console.WriteLine(word);
                 bool isPalindrome = true;
                 for (int i = 0; i < word.Length / 2; i++)
                 {

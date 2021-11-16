@@ -24,13 +24,12 @@ namespace Lab04Sav2
                     isString = true;
                     continue;
                 }
-
                 // End of String
                 if (isString == true && text[i] == '\"' && text[i - 1] != '\\')
                     isString = false;
 
                 // Start of multiline comment
-                if (isString == false && text[i] == '/' && text[i+1] == '*')
+                if (isComment == false && isString == false && text[i] == '/' && text[i+1] == '*')
                     isComment = true;
 
                 // end of multilinecomment
@@ -61,13 +60,14 @@ namespace Lab04Sav2
                     // Removes till EOF
                     else if (index == -1)
                         text = text.Remove(i);
+
                 }
             }
 
             // Outputs new text
             using (var sw = File.CreateText(fout))
                 sw.WriteLine(text.Trim());
-            
+
         }
     }
 }

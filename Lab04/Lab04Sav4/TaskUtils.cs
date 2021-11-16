@@ -21,7 +21,7 @@ namespace Lab04Sav4
         {
             for (int i = 0; i < lines.Length; i++)
             {
-                lines[i] = Regex.Replace(lines[i], $@"(?<![a-ząčęėįšųūžĄČĘĖĮŠŲŪŽ]){word}(\?|!|\.|,|:|;|\s|$)+", "", RegexOptions.ECMAScript);
+                lines[i] = Regex.Replace(lines[i], $@"(?<![A-ząčęėįšųūžĄČĘĖĮŠŲŪŽ]){word}(\?|!|\.|,|:|;|\s|$)+", "", RegexOptions.IgnoreCase); 
             }
         }
     }
