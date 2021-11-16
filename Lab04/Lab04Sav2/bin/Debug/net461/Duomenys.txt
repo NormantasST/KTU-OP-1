@@ -1,23 +1,11 @@
-void DuomenysInternet(Grybai & grybai)
-        {
-            
-            StreamReader sw = new StreamReader("text");
-            // string pav, tip;
-            // double s1;
-            int ns = 0;
-            /* bool yra = true;
-            while(!sw.EndOfStream && yra) { // kol yra duomenų ir jie telpa į masyvą
-                pav = sw.ReadLine();
-                Console.Write(pav);
-
-                if (!sw.EndOfStream && (ns - 1 < pav.Length))
-                    Console.WriteLine();
-                /*else
-                    yra = false;
-                */
-                string helloWorld = /*pasauli */ "World";
-            
-            }
-
-            sw.close();
-         }
+//Pradžia
+// Tekstas   .*/  abc  /*
+a=0;/*ABC*/b=0;/*EFGH*/ c=0;/*XY*/
+p=1;/*
+A
+B
+C
+D */ D=1;
+S=" ABC/*XY*/KI";
+p=A+B; // Darbas /*
+//Pabaiga

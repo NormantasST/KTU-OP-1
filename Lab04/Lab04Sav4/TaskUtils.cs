@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lab04Sav4
@@ -15,26 +16,20 @@ namespace Lab04Sav4
                 output.Add(word.ToLower());
             return output;
         }
-
-        public static List<string> RemoveWords(this List<string> strings, List<string> words)
+    
+        public static string RemoveWords(this string text, List<string> words)
         {
             List<string> lowerCaseWords = LowerCaseList(words);
-            for (int i = 0; i < strings.Count; i++)
-            {
-                string temp = strings[i].ToLower();
-                foreach (string word in lowerCaseWords)
+            string newText = text;
+            foreach (string word in lowerCaseWords)
+                while (text != (newText = Regex.Replace(text, $@"((?<=[^A-z])|^)xyz[^A-Z^a-z\r]+", "", RegexOptions.ECMAScript)))
                 {
-                    int index;
-                    while ((index = temp.IndexOf(word)) != -1)
-                    {
-                        strings[i] = strings[i].Remove(index, word.Length + 1);
-                        temp = temp.Remove(index, word.Length + 1);
-                    }
-
+                    text = newText;
                 }
-            }
+            
+            text = newText;
+            return text;
 
-            return strings;
         }
     }
 }

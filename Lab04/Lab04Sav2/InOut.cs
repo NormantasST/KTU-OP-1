@@ -9,66 +9,65 @@ namespace Lab04Sav2
 {
     static class InOut
     {
-        public static void Process(string fin, string fout, string finfo)
+        public static void Process(string fin, string fout)
         {
-            string[] lines = File.ReadAllLines(fin, Encoding.UTF8);
-            using (var writerF = File.CreateText(fout))
+            string text = File.ReadAllText(fin);
+            bool isComment = false;
+            bool isString = false;
+            
+            // Removes comments
+            for (int i = 0; i < text.Length; i++)
             {
-                using (var writerI = File.CreateText(finfo))
+                // Start of String
+                if (isString == false && isComment == false && text[i] == '\"' && text[i - 1] != '\\')
                 {
-                    bool comment = false;
-                    foreach (string line in lines)
+                    isString = true;
+                    continue;
+                }
+
+                // End of String
+                if (isString == true && text[i] == '\"' && text[i - 1] != '\\')
+                    isString = false;
+
+                // Start of multiline comment
+                if (isString == false && text[i] == '/' && text[i+1] == '*')
+                    isComment = true;
+
+                // end of multilinecomment
+                if (isComment == true && text[i] == '*' && text[i + 1] == '/')
+                {
+                    // removes */
+                    text = text.Remove(i, 2);
+                    i--;
+                    isComment = false;
+                }
+
+                // removes current element
+                if (isComment == true)
+                {
+                    text = text.Remove(i,1);
+                    i--;
+                }
+                // Checks if inline comment
+                else if (isComment == false && isString == false && text[i] == '/' && text[i + 1] == '/')
+                {
+                    int index = text.IndexOf('\n', i);
+                    // Removes till newline
+                    if (index != -1)
                     {
-                        if (line.Length > 0)
-                        {
-                            string newLine = line;
-                            if (RemoveComments(line, out newLine, ref comment))
-                                writerI.WriteLine(line);
-                            if (newLine.Length > 0)
-                                writerF.WriteLine(newLine);
-                        }
-                        else if (comment == false)
-                            writerF.WriteLine(line);
+                        text = text.Remove(i, index - i); // Adds line splitter to be removed
+                        i--;
                     }
+                    // Removes till EOF
+                    else if (index == -1)
+                        text = text.Remove(i);
                 }
             }
-        }
 
-        public static bool RemoveComments(string line, out string newLine, ref bool comment)
-        {
-            newLine = line;
-            bool output = false;
-            for (int i = 0; i < line.Length - 1; i++)
-            {
-                if (line[i] == '/' && line[i + 1] == '*')
-                    comment = true;
-
-                if (comment == true)
-                {
-                    int endIndex = line.IndexOf("*/");
-                    if (endIndex == -1)
-                    {
-                        // Removes the whole line
-                        newLine = line.Remove(i);
-                        return true;
-                    }
-                    else if (endIndex != -1)
-                    {
-                        endIndex = endIndex + 2;
-                        newLine = line.Remove(i, endIndex - i);
-                        comment = false;
-                        output = true;
-                    }
-
-                }
-
-                if (line[i] == '/' && line[i + 1] == '/' && comment == false)
-                {
-                    newLine = line.Remove(i);
-                    return true;
-                }
-            }
-            return output;
+            // Outputs new text
+            using (var sw = File.CreateText(fout))
+                sw.WriteLine(text.Trim());
+            
         }
     }
 }

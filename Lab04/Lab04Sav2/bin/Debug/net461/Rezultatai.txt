@@ -1,14 +1,4 @@
-void DuomenysInternet(Grybai & grybai)
-        {
-            
-            StreamReader sw = new StreamReader("text");
-            
-            
-            int ns = 0;
-            
-                string helloWorld =  "World";
-            
-            }
-
-            sw.close();
-         }
+a=0;b=0; c=0;
+p=1; D=1;
+S=" ABC/*XY*/KI";
+p=A+B;

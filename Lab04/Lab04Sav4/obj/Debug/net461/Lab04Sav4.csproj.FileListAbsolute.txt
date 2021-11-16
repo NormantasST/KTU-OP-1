@@ -8,3 +8,4 @@ C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav4\obj\Debug\net461\L
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav4\obj\Debug\net461\Lab04Sav4.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav4\obj\Debug\net461\Lab04Sav4.exe
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav4\obj\Debug\net461\Lab04Sav4.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav4\obj\Debug\net461\Lab04Sav4.csproj.AssemblyReference.cache
