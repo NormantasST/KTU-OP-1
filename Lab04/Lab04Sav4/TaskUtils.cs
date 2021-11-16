@@ -16,20 +16,13 @@ namespace Lab04Sav4
                 output.Add(word.ToLower());
             return output;
         }
-    
-        public static string RemoveWords(this string text, List<string> words)
+        
+        public static void RemoveWords(this string[] lines, string word)
         {
-            List<string> lowerCaseWords = LowerCaseList(words);
-            string newText = text;
-            foreach (string word in lowerCaseWords)
-                while (text != (newText = Regex.Replace(text, $@"((?<=[^A-z])|^)xyz[^A-Z^a-z\r]+", "", RegexOptions.ECMAScript)))
-                {
-                    text = newText;
-                }
-            
-            text = newText;
-            return text;
-
+            for (int i = 0; i < lines.Length; i++)
+            {
+                lines[i] = Regex.Replace(lines[i], $@"(?<![a-ząčęėįšųūžĄČĘĖĮŠŲŪŽ]){word}(\?|!|\.|,|:|;|\s|$)+", "", RegexOptions.ECMAScript);
+            }
         }
     }
 }

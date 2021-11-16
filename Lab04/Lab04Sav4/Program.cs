@@ -8,13 +8,11 @@ namespace Lab04Sav4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Char.IsLetter('!'));
             const string input = "Duomenys4.txt";
             const string output = "output.txt";
-            List<string> words = new List<string>("xyz".Split(';'));
-            string text = File.ReadAllText(input);
-            text = text.RemoveWords(words);
-            text.WriteLines(output);
+            string[] lines = File.ReadAllLines(input);
+            TaskUtils.RemoveWords(lines, "xyz");
+            InOut.WriteLines(lines, output);
         }
     }
 }
