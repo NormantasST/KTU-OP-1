@@ -10,7 +10,7 @@ namespace Lab04Sav3
 {
     static class TaskUtils
     {
-        private static string regex = @"[a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ]+";
+        private static string regex = @"[0-9a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ]+";
         public static int ProcessPalindrome(string input)
         {
             int count = 0;

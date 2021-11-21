@@ -1,7 +1,10 @@
 //Pradžia
 // Tekstas   .*/  abc  /*
 a=0;/*ABC*/b=0;/*EFGH*/ c=0;/*XY*/
-p=1; D=1;
+p=1; /*
+A = 1;
+A= 2; */ D=1;
 S=" ABC/*XY*/KI";
 p=A+B; // Darbas /*
+/* abc // cdg */ K = 10
 //Pabaiga

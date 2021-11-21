@@ -23,7 +23,7 @@ namespace Lab04Sav2
                 {
                     isString = true;
                     continue;
-                }
+                } 
                 // End of String
                 if (isString == true && text[i] == '\"' && text[i - 1] != '\\')
                     isString = false;
