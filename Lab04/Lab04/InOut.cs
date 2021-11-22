@@ -61,5 +61,12 @@ namespace Lab04
                 sw.WriteLine();
             }
         }
+
+        public static void WriteString(string output, string text)
+        {
+            using (StreamWriter sw = new StreamWriter(output))
+                sw.WriteLine(text);
+            
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace Lab04
         static void Main(string[] args)
         {
             const string input1 = "Knyga1.txt";
-            const string input2 = "Knyga3.txt";
+            const string input2 = "Knyga2.txt";
             const string output = "Rodikliai.txt";
 
             char[] sentenceChar = { '!', '?', '.' };
@@ -41,6 +41,7 @@ namespace Lab04
             InOut.WriteLongestSentence(output, $"{input1} Longest Sentence Info:", sentences1, text1);
             InOut.WriteLongestSentence(output, $"{input2} Longest Sentence Info:", sentences2, text2);
 
+            InOut.WriteString("ManoKnyga.txt", TaskUtils.WriteBook(text1, text2));
         }
     }
 }

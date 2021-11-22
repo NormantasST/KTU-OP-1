@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lab04
@@ -78,14 +79,50 @@ namespace Lab04
                 if (sentence.Length > longestSentence.Length)
                     longestSentence = sentence;
 
-            return longestSentence;
+            return longestSentence.Trim();
             
         }
 
         public static int GetSentenceStart(string text, string sentence)
         {
             text = text.Remove(text.IndexOf(sentence));
-            return text.Split('\n').Length;
+            int line =  text.Split('\r').Length;
+            return line;
+        }
+
+        public static string WriteBook(string text1, string text2)
+        {
+            string main = text1;
+            string other = text2;
+            string output = "";
+            while(main != "")
+            {
+                string word = "empty";
+                word = Regex.Match(other, @"\w+", RegexOptions.IgnoreCase).Value;
+                
+                int index = main.IndexOf(word);
+                if (index == -1)
+                {
+                    output += main + " ";
+                    break;
+                }
+                else
+                {
+                    // Removes Used up parts
+                    output += main.Substring(0, index);
+                    main = main.Remove(0, index + word.Length);
+                    int newWordIndex = Regex.Match(main, @"\w").Index;
+                    main = main.Remove(0, newWordIndex);
+                }
+
+                // Swaps strings
+                string temp = main;
+                main = other;
+                other = temp;
+            }
+            output += other;
+            return output;
+
         }
     }
 }

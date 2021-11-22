@@ -1,31 +1,26 @@
 Knyga1.txt Initial Data:
 ------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris adipiscing. nisi ut aliquip ex ea commodo consequat. Duis aute irure consectetur adipiscing. dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident, sunt in consectetur culpa qui officiadeserunt mollit anim id est laborum. adipiscing.
+a
 
-Knyga3.txt Initial Data:
+Knyga2.txt Initial Data:
 ------------------------
-consectetur deserunt Hello World
+b c d
 
 Knyga1.txt Common Word Count:
 -----------------------------
-              consectetur: 3
-                 deserunt: 1
 
-Knyga3.txt Common Word Count:
+Knyga2.txt Common Word Count:
 -----------------------------
-              consectetur: 1
-                 deserunt: 1
 
 Knyga1.txt Longest Sentence Info:
 ---------------------------------
-Longest Sentence is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua
-Symbol Count: 122 Word Count: 19
+Longest Sentence is: a
+Symbol Count: 1 Word Count: 1
 Line Where the Sentence Starts: 1
 
-Knyga3.txt Longest Sentence Info:
+Knyga2.txt Longest Sentence Info:
 ---------------------------------
-Longest Sentence is: consectetur deserunt Hello World
-Symbol Count: 32 Word Count: 4
+Longest Sentence is: b c d
+Symbol Count: 5 Word Count: 3
 Line Where the Sentence Starts: 1
 
