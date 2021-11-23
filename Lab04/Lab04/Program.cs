@@ -8,8 +8,8 @@ namespace Lab04
     {
         static void Main(string[] args)
         {
-            const string input1 = "Knyga1.txt";
-            const string input2 = "Knyga2.txt";
+            const string input1 = "Knyga10.txt";
+            const string input2 = "Knyga20.txt";
             const string output = "Rodikliai.txt";
 
             char[] sentenceChar = { '!', '?', '.' };
