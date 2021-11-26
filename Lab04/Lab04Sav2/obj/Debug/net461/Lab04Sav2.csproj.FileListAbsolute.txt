@@ -8,4 +8,11 @@ C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav2\obj\Debug\net461\L
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.exe
 C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.pdb
-C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.csproj.AssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\bin\Debug\net461\Lab04Sav2.exe
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\bin\Debug\net461\Lab04Sav2.pdb
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.AssemblyInfoInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.AssemblyInfo.cs
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.exe
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.pdb
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab04\Lab04Sav2\obj\Debug\net461\Lab04Sav2.csprojAssemblyReference.cache

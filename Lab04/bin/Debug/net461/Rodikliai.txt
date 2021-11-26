@@ -1,0 +1,14 @@
+Knyga1.txt Initial Data:
+------------------------
+a
+
+Knyga2.txt Initial Data:
+------------------------
+b c d
+
+Knyga1.txt Common Word Count:
+-----------------------------
+
+Knyga2.txt Common Word Count:
+-----------------------------
+

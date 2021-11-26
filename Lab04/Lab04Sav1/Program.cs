@@ -6,7 +6,7 @@ namespace Lab04Sav1
     {
         static void Main(string[] args)
         {
-            const string CFd = "Duomenys.txt";
+            const string CFd = "Duomenys1.txt";
             const string CFr = "Rezultatai.txt";
             const string CFrSorted = "Rezultatai_Sorted.txt";
             LettersFrequency letters = new LettersFrequency();

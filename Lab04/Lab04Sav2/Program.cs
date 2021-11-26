@@ -6,7 +6,7 @@ namespace Lab04Sav2
     {
         static void Main(string[] args)
         {
-            const string CFd = "Duomenys2.txt";
+            const string CFd = "Duomenys.txt";
             const string CFr = "Rezultatai.txt";
             InOut.Process(CFd, CFr);
         }

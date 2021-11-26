@@ -2,14 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lab04
 {
+    /// <summary>
+    /// TaskUtils Static Class for Computations
+    /// </summary>
     static class TaskUtils
     {
-
+        /// <summary>
+        /// Gets words that appear in both string[] arrays
+        /// </summary>
         private static List<string> GetDuplicates(string[] words1, string[] words2)
         {
             List<string> output = new List<string>();
@@ -20,6 +24,9 @@ namespace Lab04
             return output;
         }
 
+        /// <summary>
+        /// Sorts srings by their length
+        /// </summary>
         private static List<string> LengthSort(this List<string> data)
         {
             for (int i = 0; i < data.Count - 1; i++)
@@ -34,6 +41,9 @@ namespace Lab04
             return data;
         }
 
+        /// <summary>
+        /// Returns words all in lowercase
+        /// </summary>
         private static void LowerCaseStrings(string[] words)
         {
             for (int i = 0; i < words.Length; i++)
@@ -41,6 +51,9 @@ namespace Lab04
 
         }
 
+        /// <summary>
+        /// Gets common words
+        /// </summary>
         public static List<string> GetCommonWords(string[] words1, string[] words2)
         {
             LowerCaseStrings(words1);
@@ -54,6 +67,9 @@ namespace Lab04
             return output;
         }
 
+        /// <summary>
+        /// Get's words' count in words[] array from commonWords
+        /// </summary>
         public static Dictionary<string, int> GetRepetition(List<string> commonWords, string[] words)
         {
             Dictionary<string,int> repetition = new Dictionary<string,int>();
@@ -72,6 +88,9 @@ namespace Lab04
             return repetition;
         }
 
+        /// <summary>
+        /// Gets longest sentence
+        /// </summary>
         public static string LongestSentence(string[] sentences)
         {
             string longestSentence = "";
@@ -79,50 +98,17 @@ namespace Lab04
                 if (sentence.Length > longestSentence.Length)
                     longestSentence = sentence;
 
-            return longestSentence.Trim();
+            return longestSentence;
             
         }
 
+        /// <summary>
+        /// Gets in what line the sentence starts
+        /// </summary>
         public static int GetSentenceStart(string text, string sentence)
         {
             text = text.Remove(text.IndexOf(sentence));
-            int line =  text.Split('\r').Length;
-            return line;
-        }
-
-        public static string WriteBook(string text1, string text2)
-        {
-            string main = text1;
-            string other = text2;
-            string output = "";
-            while(main != "")
-            {
-                string word = "empty";
-                word = Regex.Match(other, @"\w+", RegexOptions.IgnoreCase).Value;
-                
-                int index = main.IndexOf(word);
-                if (index == -1)
-                {
-                    output += main + " ";
-                    break;
-                }
-                else
-                {
-                    // Removes Used up parts
-                    output += main.Substring(0, index);
-                    main = main.Remove(0, index + word.Length);
-                    int newWordIndex = Regex.Match(main, @"\w").Index;
-                    main = main.Remove(0, newWordIndex);
-                }
-
-                // Swaps strings
-                string temp = main;
-                main = other;
-                other = temp;
-            }
-            output += other;
-            return output;
-
+            return text.Split('\n').Length;
         }
     }
 }

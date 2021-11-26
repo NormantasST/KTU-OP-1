@@ -1,39 +1,32 @@
-Knyga10.txt Initial Data:
--------------------------
- 1,,2,3? midline text text text endof104,5,,,,6,78,9,a.
+Knyga1.txt Initial Data:
+------------------------
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris adipiscing. nisi ut aliquip ex ea commodo consequat. Duis aute irure consectetur adipiscing. dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident, sunt in consectetur culpa qui officiadeserunt mollit anim id est laborum. adipiscing.
 
-Knyga20.txt Initial Data:
--------------------------
-3,,,cceee,,midline ddee,,eeee,, 4 ,ff,,gg,,7
+Knyga3.txt Initial Data:
+------------------------
+consectetur deserunt Hello World
 
-Knyga10.txt Common Word Count:
-------------------------------
-                  midline: 1
-                        3: 1
-                        4: 1
-                        7: 1
+Knyga1.txt Common Word Count:
+-----------------------------
+              consectetur: 3
+                 deserunt: 1
 
-Knyga20.txt Common Word Count:
-------------------------------
-                  midline: 1
-                        3: 1
-                        4: 1
-                        7: 1
+Knyga3.txt Common Word Count:
+-----------------------------
+              consectetur: 1
+                 deserunt: 1
 
-Knyga10.txt Longest Sentence Info:
-----------------------------------
-Longest Sentence is: midline text text text endof10
+Knyga1.txt Longest Sentence Info:
+---------------------------------
+Longest Sentence is:  Excepteur
+sint occaecat cupidatat non proident, sunt in consectetur culpa qui officia
+deserunt mollit anim id est laborum
+Symbol Count: 124 Word Count: 18
+Line Where the Sentence Starts: 5
 
-
-4,5,,,,6,7
-8,9,a
-Symbol Count: 53 Word Count: 12
-Line Where the Sentence Starts: 1
-
-Knyga20.txt Longest Sentence Info:
-----------------------------------
-Longest Sentence is: 3,,,cceee,,midline ddee,,eeee,,
- 4 ,ff,,gg,,7
-Symbol Count: 46 Word Count: 9
+Knyga3.txt Longest Sentence Info:
+---------------------------------
+Longest Sentence is: consectetur deserunt Hello World
+Symbol Count: 32 Word Count: 4
 Line Where the Sentence Starts: 1
 

@@ -10,7 +10,8 @@ namespace Lab04Sav3
 {
     static class TaskUtils
     {
-        private static string regex = @"[0-9a-zA-ZąčęėįšųūžĄČĘĖĮŠŲŪŽ]+";
+        private static string punctuation = "[\\s,.;:!?()\\-]+";
+
         public static int ProcessPalindrome(string input)
         {
             int count = 0;
@@ -22,10 +23,8 @@ namespace Lab04Sav3
         public static int GetPalindromeCount(string line)
         {
             int count = 0;
-            foreach (Match match in Regex.Matches(line, regex, RegexOptions.ECMAScript))
+            foreach (string word in Regex.Split(line, punctuation))
             {
-                string word = match.Value;
-                Console.WriteLine(word);
                 bool isPalindrome = true;
                 for (int i = 0; i < word.Length / 2; i++)
                 {

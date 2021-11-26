@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Jw8b+9fX7i0SrHIjmmZdZ0CweMQscjRJHLMXH9fO+cys07Ca/EchWbc0iiusKpJ/pki5byddPGlj4HqqwIUYyQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\K2 Pasiruošimas\\K2 Pasiruošimas\\K2 Pasiruošimas.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
+  ],
+  "logs": []
+}

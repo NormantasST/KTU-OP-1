@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "K2 Pasiruošimas/1.0.0": {
+        "runtime": {
+          "K2 Pasiruošimas.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "K2 Pasiruošimas/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
