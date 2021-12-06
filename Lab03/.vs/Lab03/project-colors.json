@@ -5,7 +5,12 @@
       "ProjectGuid": "ad0e475e-6f5a-466f-ac70-a8c4ca0430ec",
       "DisplayName": "Lab03",
       "ColorIndex": 0
+    },
+    "99bbdc37-d4fa-4fb3-b9fc-67ff6df672d0": {
+      "ProjectGuid": "99bbdc37-d4fa-4fb3-b9fc-67ff6df672d0",
+      "DisplayName": "Lab03.Register",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

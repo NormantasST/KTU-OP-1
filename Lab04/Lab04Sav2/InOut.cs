@@ -15,6 +15,7 @@ namespace Lab04Sav2
             string text = File.ReadAllText(fin, Encoding.UTF8);
             using (var writer = File.CreateText(fout))
             {
+
                 text = RemoveExtendedComments(text);
                 foreach (string line in text.Split('\n'))
                 {

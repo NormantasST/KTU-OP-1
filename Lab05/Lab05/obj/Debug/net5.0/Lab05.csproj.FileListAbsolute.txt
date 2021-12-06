@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\Lab05.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\Lab05.deps.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\Lab05.runtimeconfig.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\Lab05.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\Lab05.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\ref\Lab05.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net5.0\Lab05.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\ref\Lab05.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net5.0\Lab05.genruntimeconfig.cache

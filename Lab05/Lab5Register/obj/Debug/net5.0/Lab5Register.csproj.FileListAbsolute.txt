@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\Lab5Register.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\Lab5Register.deps.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\Lab5Register.runtimeconfig.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\Lab5Register.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\Lab5Register.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\ref\Lab5Register.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\bin\Debug\net5.0\Lab5Register.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\ref\Lab5Register.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.genruntimeconfig.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Register\obj\Debug\net5.0\Lab5Register.csproj.AssemblyReference.cache

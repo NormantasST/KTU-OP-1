@@ -1,0 +1,36 @@
+﻿Initial Teams:
+
+Type                |TeamName            |City                |Trainer             |MatchesPlayed       
+Basketball          |Žalgiris            |Kaunas              |Šarūnas Jasikevičius|                  36
+Basketball          |Lietuvos Rytas      |Vilnius             |Rimas Kurtinaitis   |                  36
+Football            |Jonava              |Jonava              |Felipe Ribeiro      |                  44
+Basketball          |Neptūnas            |Klaipėda            |Kazys Maksvytis     |                  36
+Football            |Žalgiris            |Vilnius             |Aurelijus Skarbalius|                  44
+Football            |Trakai              |Trakai              |Virmantas Lemežis   |                  44
+Basketball          |Vytautas            |Prienai             |Virginijus Šeškus   |                  36
+
+Initial Players:
+
+Player-Type         |TeamName            |LastName            |FirstName           |MatchesPlayed       |PointsEarned   |Fouls/Takeovers     |Passes         
+Basketballer        |Žalgiris            |Kavaliauskas        |Antanas             |                  36|            225|                  95|             34
+Footballer          |Žalgiris            |Šernas              |Darvynas            |                  40|              6|                   8|
+Footballer          |Žalgiris            |Mikoliūnas          |Saulius             |                  44|              5|                   9|
+Basketballer        |Žalgiris            |Milaknis            |Artūras             |                  36|            250|                  53|              9
+Footballer          |Jonava              |Klimavičius         |Arūnas              |                  44|             17|                   1|
+Basketballer        |Neptūnas            |Jucikas             |Matas               |                  19|            340|                  28|              5
+Basketballer        |Neptūnas            |Einikis             |Aidas               |                   5|              7|                   4|              2
+Basketballer        |Vytautas            |Ball                |Lamelo              |                  10|             52|                   9|             19
+Basketballer        |Lietuvos Rytas      |Jomantas            |Artūras             |                  32|            107|                  33|             11
+Basketballer        |Vytautas            |Žukauskas           |Eigirdas            |                  36|            298|                 129|             82
+Footballer          |Trakai              |Vorobjovas          |Modestas            |                  44|             18|                   2|
+Basketballer        |Vytautas            |Šeškus              |Edvinas             |                  36|            222|                  68|             48
+Basketballer        |Neptūnas            |Seibutis            |Renaldas            |                  36|             50|                  78|             54
+Basketballer        |Lietuvos Rytas      |Giedraitis          |Rokas               |                  36|            359|                  97|             54
+Footballer          |Trakai              |Marazas             |Justinas            |                  44|             16|                   1|
+Basketballer        |Lietuvos Rytas      |Lukauskas           |Mindaugas           |                  28|             84|                  45|             16
+
+Best Players:
+
+Player-Type         |TeamName            |LastName            |FirstName           |MatchesPlayed       |PointsEarned   |Fouls/Takeovers     |Passes         
+No Data Found
+

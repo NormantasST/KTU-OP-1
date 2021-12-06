@@ -1,0 +1,16 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\Lab5Sav4.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\Lab5Sav4.deps.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\Lab5Sav4.runtimeconfig.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\Lab5Sav4.runtimeconfig.dev.json
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\Lab5Sav4.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\ref\Lab5Sav4.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\bin\Debug\net5.0\Lab5Sav4.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\ref\Lab5Sav4.dll
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab5Sav4\obj\Debug\net5.0\Lab5Sav4.genruntimeconfig.cache

@@ -97,7 +97,7 @@ namespace Lab03.Register
             foreach (Dog dog in dogs)
                 Console.WriteLine($"{dog.ID,-fSize}|{dog.Name,fSize}|{dog.Breed,fSize}|{dog.BirthDate,fSize * 3 / 2}|{dog.Gender,fSize}|");
 
-            
+ 
         }
 
         public static List<Vaccination> ReadVaccinations(string fileName)

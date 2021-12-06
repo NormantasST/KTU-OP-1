@@ -1,0 +1,7 @@
+﻿k;Žalgiris;Kaunas;Šarūnas Jasikevičius;36;
+k;Lietuvos Rytas;Vilnius;Rimas Kurtinaitis;36;
+f;Jonava;Jonava;Felipe Ribeiro;44;
+k;Neptūnas;Klaipėda;Kazys Maksvytis;36;
+f;Žalgiris;Vilnius;Aurelijus Skarbalius;44;
+f;Trakai;Trakai;Virmantas Lemežis;44;
+k;Vytautas;Prienai;Virginijus Šeškus;36;

@@ -1,0 +1,11 @@
+﻿Gyvūno tipas        ;Reg.Nr.             ;Vardas              ;Veislė              ;Gimimo data                   ;Lytis               ;Agresyvumas         
+Dog                 ;123                 ;Reksas              ;A                   ;2014-01-01                    ;Male                ;True      
+Cat                 ;1                   ;Wisp                ;A                   ;2014-04-02                    ;Male                ;
+GuineaPig           ;125                 ;Floky               ;B                   ;2200-07-17                    ;Male                ;
+Dog                 ;124                 ;Margis              ;A                   ;2014-02-28                    ;Female              ;False     
+Cat                 ;2                   ;Lyra                ;B                   ;2008-08-17                    ;Female              ;
+Dog                 ;125                 ;Bitas               ;B                   ;2008-07-17                    ;Female              ;True      
+GuineaPig           ;125                 ;Piggers             ;B                   ;2003-07-17                    ;Female              ;
+Cat                 ;3                   ;Silvestras          ;A                   ;2012-02-07                    ;Male                ;
+Dog                 ;320                 ;Rikis               ;A                   ;2012-01-07                    ;Male                ;False     
+Dog                 ;200                 ;Wisp                ;A                   ;2014-04-02                    ;Male                ;False     
