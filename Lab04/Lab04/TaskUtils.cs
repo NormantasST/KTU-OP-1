@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lab04
 {
-    /// <summary>
-    /// TaskUtils Static Class for Computations
-    /// </summary>
     static class TaskUtils
     {
         /// <summary>
-        /// Gets words that appear in both string[] arrays
+        /// Gets words that appear in both files
         /// </summary>
         private static List<string> GetDuplicates(string[] words1, string[] words2)
         {
@@ -25,7 +23,7 @@ namespace Lab04
         }
 
         /// <summary>
-        /// Sorts srings by their length
+        /// Sorts words by their length
         /// </summary>
         private static List<string> LengthSort(this List<string> data)
         {
@@ -41,9 +39,7 @@ namespace Lab04
             return data;
         }
 
-        /// <summary>
-        /// Returns words all in lowercase
-        /// </summary>
+        // Turns words to lowerCaseStrings
         private static void LowerCaseStrings(string[] words)
         {
             for (int i = 0; i < words.Length; i++)
@@ -52,7 +48,7 @@ namespace Lab04
         }
 
         /// <summary>
-        /// Gets common words
+        /// Gets common words that appear in both files
         /// </summary>
         public static List<string> GetCommonWords(string[] words1, string[] words2)
         {
@@ -68,7 +64,7 @@ namespace Lab04
         }
 
         /// <summary>
-        /// Get's words' count in words[] array from commonWords
+        /// Gets repetition of words that are common in both files
         /// </summary>
         public static Dictionary<string, int> GetRepetition(List<string> commonWords, string[] words)
         {
@@ -98,17 +94,60 @@ namespace Lab04
                 if (sentence.Length > longestSentence.Length)
                     longestSentence = sentence;
 
-            return longestSentence;
+            return longestSentence.Trim();
             
         }
 
         /// <summary>
-        /// Gets in what line the sentence starts
+        /// Gets where the sentence starts (line)
         /// </summary>
         public static int GetSentenceStart(string text, string sentence)
         {
             text = text.Remove(text.IndexOf(sentence));
-            return text.Split('\n').Length;
+            int line =  text.Split('\r').Length;
+            return line;
+        }
+
+        /// <summary>
+        /// Writes ManoKnyga.txt file
+        /// </summary>
+        public static string WriteBook(string text1, string text2)
+        {
+            string main = text1;
+            string other = text2;
+            string output = "";
+            while(main != "")
+            {
+                string word = "empty";
+                word = Regex.Match(other, @"\w+", RegexOptions.IgnoreCase).Value;
+                
+                int index = main.IndexOf(word);
+                if (index == -1)
+                {
+                    output += main + " ";
+                    break;
+                }
+                else
+                {
+                    // Removes Used up parts
+                    output += main.Substring(0, index);
+                    main = main.Remove(0, index + word.Length);
+                    Match match = Regex.Match(main, @"\w");
+                    if (match.Success)
+                        main = main.Remove(0, match.Index);
+                    else
+                        main = "";
+                }
+
+                // Swaps strings
+                string temp = main;
+                main = other;
+                other = temp;
+            }
+
+                output += other;
+            return output;
+
         }
     }
 }

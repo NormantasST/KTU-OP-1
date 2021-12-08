@@ -28,7 +28,7 @@ namespace Lab5Register
 
         public new string ToString(string splitter)
         {
-            return $"{ID,fSize}{splitter}{Name,fSize}{splitter}{Breed,fSize}{splitter}{BirthDate, fSize * 3 / 2:yyyy-MM-dd}{splitter}{Gender,fSize}{splitter}{Aggresive, fSize / 2}";
+            return $"{"DOG",fSize}|{ID,fSize}{splitter}{Name,fSize}{splitter}{Breed,fSize}{splitter}{BirthDate,fSize * 3 / 2:yyyy-MM-dd}{splitter}{Gender,fSize}{splitter}{Aggresive,fSize / 2}";
         }
 
         public override string ToString()

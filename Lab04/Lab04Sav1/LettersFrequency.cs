@@ -34,7 +34,7 @@ namespace Lab04Sav1
 
         public void Add(char ch)
         {
-            if (Frequency.ContainsKey(ch))
+            if(Frequency.ContainsKey(ch))
                 Frequency[ch]++;
         }
 

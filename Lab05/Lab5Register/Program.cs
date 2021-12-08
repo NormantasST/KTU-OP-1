@@ -32,6 +32,8 @@ namespace Lab5Register
             InOutUtils.PrintAnimals("Sorted by Date:", container);
 
             // GuineaPig ADDED
+
+            Console.Read();
         }
     }
 }

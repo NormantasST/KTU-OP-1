@@ -29,24 +29,7 @@ namespace Lab5Register
             if(animals.Count > 0)
                 foreach(Animal animal in animals)
                 {
-                    string output;
-                    switch (animal.GetType().ToString())
-                    {
-                        case "Lab5Register.Dog":
-                            output = $"{"Dog",fSize}{splitter}" + ((Dog)animal).ToString(splitter);
-                            break;
-                        case "Lab5Register.Cat":
-                            output = $"{"Cat",fSize}{splitter}" + ((Cat)animal).ToString(splitter);
-                            break;
-                        case "Lab5Register.GuineaPig":
-                            output = $"{"GuineaPig",fSize}{splitter}" + ((GuineaPig)animal).ToString(splitter);
-                            break;
-                        default:
-                            output = $"{"Unknown",fSize}{splitter}" + animal.ToString(splitter);
-                            break;
-                    }
-
-                    Console.WriteLine(output);
+                    Console.WriteLine(animal);
                 }
             else
                 Console.WriteLine("No Data Found");
@@ -62,24 +45,7 @@ namespace Lab5Register
                 for (int i = 0; i < animals.Count; i++)
                 {
                     Animal animal = animals.Get(i);
-                    string output;
-                    switch (animal.GetType().ToString())
-                    {
-                        case "Lab5Register.Dog":
-                            output = $"{"Dog",fSize}{splitter}" + ((Dog)animal).ToString(splitter);
-                            break;
-                        case "Lab5Register.Cat":
-                            output = $"{"Cat",fSize}{splitter}" + ((Cat)animal).ToString(splitter);
-                            break;
-                        case "Lab5Register.GuineaPig":
-                            output = $"{"GuineaPig",fSize}{splitter}" + ((GuineaPig)animal).ToString(splitter);
-                            break;
-                        default:
-                            output = $"{"Unknown",fSize}{splitter}" + animal.ToString(splitter);
-                            break;
-                    }
-
-                    Console.WriteLine(output);
+                    Console.WriteLine(animal);
                 }
             else
                 Console.WriteLine("No Data Found");
@@ -94,24 +60,7 @@ namespace Lab5Register
                 if (animals.Count > 0)
                     foreach (Animal animal in animals)
                     {
-                        string output;
-                        switch (animal.GetType().ToString())
-                        {
-                            case "Lab5Register.Dog":
-                                output = $"{"Dog",fSize}{splitter}" + ((Dog)animal).ToString(splitter);
-                                break;
-                            case "Lab5Register.Cat":
-                                output = $"{"Cat",fSize}{splitter}" + ((Cat)animal).ToString(splitter);
-                                break;
-                            case "Lab5Register.GuineaPig":
-                                output = $"{"GuineaPig",fSize}{splitter}" + ((GuineaPig)animal).ToString(splitter);
-                                break;
-                            default:
-                                output = $"{"Unknown",fSize}{splitter}" + animal.ToString(splitter);
-                                break;
-                        }
-
-                        sw.WriteLine(output);
+                        sw.WriteLine(animal.ToString(splitter));
                     }
                 else
                     sw.WriteLine("No Data Found");
@@ -135,29 +84,11 @@ namespace Lab5Register
 
              Console.WriteLine(new string('-', 150));
 
-            string splitter = "|";
             if(animals.Count > 0)
                  for (int i = 0; i < animals.Count; i++)
                  {
-                    string output;
                     Animal animal = animals.Get(i);
-                    switch (animal.GetType().ToString())
-                    {
-                        case "Lab5Register.Dog":
-                            output = $"{"Dog", fSize}{splitter}" + ((Dog)animal).ToString(splitter);
-                            break;
-                        case "Lab5Register.Cat":
-                            output = $"{"Cat",fSize}{splitter}" + ((Cat)animal).ToString(splitter);
-                            break;
-                        case "Lab5Register.GuineaPig":
-                            output = $"{"GuineaPig",fSize}{splitter}" + ((GuineaPig)animal).ToString(splitter);
-                            break;
-                        default:
-                            output = $"{"Unknown",fSize}{splitter}" + animal.ToString(splitter); 
-                            break;
-                    }
-
-                    Console.WriteLine(output);
+                    Console.WriteLine(animal);
                  }
              else
                 Console.WriteLine("No Data Found");

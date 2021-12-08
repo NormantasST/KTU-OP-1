@@ -24,5 +24,15 @@ namespace Lab5Register
                 return LastVaccinationDate.AddMonths(VaccinationDurationMonths).CompareTo(DateTime.Now) < 0;
             }
         }
+
+        public new string ToString(string splitter)
+        {
+            return $"{"CAT",fSize}|{ID,fSize}{splitter}{Name,fSize}{splitter}{Breed,fSize}{splitter}{BirthDate,fSize * 3 / 2:yyyy-MM-dd}{splitter}{Gender,fSize}{splitter}";
+        }
+
+        public override string ToString()
+        {
+            return ToString("|");
+        }
     }
 }

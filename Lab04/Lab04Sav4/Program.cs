@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Lab04Sav4
 {
@@ -7,12 +8,11 @@ namespace Lab04Sav4
     {
         static void Main(string[] args)
         {
-            const string input = "data.txt";
+            const string input = "Duomenys4.txt";
             const string output = "output.txt";
-            List<string> words = new List<string>("lorem;ipsum;ut;in;fugiat".Split(';'));
-            List<string> lines = InOut.ReadLines(input);
-            lines.RemoveWords(words);
-            lines.WriteLines(output);
+            string[] lines = File.ReadAllLines(input);
+            TaskUtils.RemoveWords(lines, "xyz");
+            InOut.WriteLines(lines, output);
         }
     }
 }

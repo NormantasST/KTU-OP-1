@@ -1,0 +1,10 @@
+Tomas Asas
+2000-04-12
+Kaunas
+Moviee 1;2012;Comedy;Studio A;Director A;N. Cage;J. Sperrow;318
+Titanic;2008;History;Studio B;Director B;N. Cage;J. Sperrow;318
+Hangover 2;2012;Comedy;Studio A;Director A;N. Cage;J. Sperrow;318
+Titanic 2;2008;History;Studio B;Director B;N. Cage;J. Sperrow;318
+Ghost Rider 5;2007;Action;Columbia Pictures;Mark Steven Johnson;N. Cage;E. Mendes; 118
+Hangover 3;2012;Comedy;Studio A;Director A;N. Cage;J. Sperrow;318
+Titanic 4;2008;History;Studio B;Director B;N. Cage;J. Sperrow;318

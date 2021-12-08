@@ -14,8 +14,10 @@ namespace Lab5Sav4
             List<Player> players = InOutUtils.ReadPlayers("Sportininkai3.txt");
             InOutUtils.WritePlayers(players, "output.txt", "Initial Players:");
 
-            List<Player> BestPlayers = TaskUtils.BestPlayers(players, teams, "Klaipėda");
+            List<Player> BestPlayers = TaskUtils.BestPlayers(players, teams, "Vilnius");
             InOutUtils.WritePlayers(BestPlayers, "output.txt", "Best Players:");
+
+            //Console.Read();
         }
     }
 }

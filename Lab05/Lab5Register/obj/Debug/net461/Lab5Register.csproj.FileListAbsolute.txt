@@ -1,0 +1,8 @@
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\bin\Debug\net461\Lab5Register.exe
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\bin\Debug\net461\Lab5Register.pdb
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\obj\Debug\net461\Lab5Register.csprojAssemblyReference.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\obj\Debug\net461\Lab5Register.csproj.CoreCompileInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\obj\Debug\net461\Lab5Register.AssemblyInfoInputs.cache
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\obj\Debug\net461\Lab5Register.AssemblyInfo.cs
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\obj\Debug\net461\Lab5Register.exe
+C:\Users\norsta\Desktop\KTU-OOP-1-main\Lab05\Lab5Register\obj\Debug\net461\Lab5Register.pdb

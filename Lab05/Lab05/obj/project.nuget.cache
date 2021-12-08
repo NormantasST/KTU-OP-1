@@ -1,10 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ctVCSZ7Jr5iQBMHBwQ4ec2fDe7FtLSjcocjaB6W4d7Bqt3PxIDVvRy37wbEQdqijqhEyBFNyaQpUvtFxKbxpfQ==",
+  "dgSpecHash": "5kg2CYw4qRu2p+W8K+z6+/yjsLzJ8yzTqp6emXMhRHFC36DrQIZ8zGQ/2MQGugLKkoHqlQ6JveAa6g3G1vgerA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab05\\Lab05.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

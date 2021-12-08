@@ -41,7 +41,7 @@ namespace Lab5Sav4
 
             foreach (string line in lines)
             {
-                string[] elements = line.Split(';', StringSplitOptions.RemoveEmptyEntries);
+                string[] elements = line.Split(";".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
                 string team = elements[0];
                 string lastName = elements[1];
                 string firstName = elements[2];
@@ -91,15 +91,8 @@ namespace Lab5Sav4
                 sw.WriteLine($"{"Player-Type",-20}|{"TeamName",-20}|{"LastName",-20}|{"FirstName",-20}|{"MatchesPlayed",-20}|{"PointsEarned",-15}|{"Fouls/Takeovers",-20}|{"Passes",-15}");
                 if (players.Count > 0)
                     foreach (Player player in players)
-                        switch (player.GetType().ToString())
-                        {
-                            case "Lab5Sav4.Basketball":
-                                sw.WriteLine(player as Basketball);
-                                break;
-                            case "Lab5Sav4.Football":
-                                sw.WriteLine(player as Football);
-                                break;
-                        }
+                        sw.WriteLine(player.ToString());
+
                 else
                     sw.WriteLine("No Data Found");
 

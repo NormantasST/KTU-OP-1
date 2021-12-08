@@ -1,32 +1,40 @@
-Knyga1.txt Initial Data:
-------------------------
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrudexercitation ullamco laboris adipiscing. nisi ut aliquip ex ea commodo consequat. Duis aute irure consectetur adipiscing. dolor in reprehenderit involuptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteursint occaecat cupidatat non proident, sunt in consectetur culpa qui officiadeserunt mollit anim id est laborum. adipiscing.
-
-Knyga3.txt Initial Data:
-------------------------
-consectetur deserunt Hello World
-
 Knyga1.txt Common Word Count:
 -----------------------------
-              consectetur: 3
+            reprehenderit: 1
+                consequat: 1
+                voluptate: 1
+                excepteur: 1
+                cupidatat: 1
+                 pariatur: 1
+                 occaecat: 1
+                 proident: 1
                  deserunt: 1
+                  nostrud: 1
 
-Knyga3.txt Common Word Count:
+Knyga2.txt Common Word Count:
 -----------------------------
-              consectetur: 1
+            reprehenderit: 1
+                consequat: 1
+                voluptate: 1
+                excepteur: 1
+                cupidatat: 1
+                 pariatur: 1
+                 occaecat: 1
+                 proident: 1
                  deserunt: 1
+                  nostrud: 1
 
 Knyga1.txt Longest Sentence Info:
 ---------------------------------
-Longest Sentence is:  Excepteur
-sint occaecat cupidatat non proident, sunt in consectetur culpa qui officia
-deserunt mollit anim id est laborum
-Symbol Count: 124 Word Count: 18
-Line Where the Sentence Starts: 5
-
-Knyga3.txt Longest Sentence Info:
----------------------------------
-Longest Sentence is: consectetur deserunt Hello World
-Symbol Count: 32 Word Count: 4
+Longest Sentence is: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+eiusmod tempor incididunt ut labore et dolore magna aliqua
+Symbol Count: 124 Word Count: 19
 Line Where the Sentence Starts: 1
+
+Knyga2.txt Longest Sentence Info:
+---------------------------------
+Longest Sentence is: Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+qui officia deserunt mollit anim id est laborum
+Symbol Count: 111 Word Count: 17
+Line Where the Sentence Starts: 4
 

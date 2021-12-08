@@ -9,7 +9,7 @@ namespace Lab04
         static void Main(string[] args)
         {
             const string input1 = "Knyga1.txt";
-            const string input2 = "Knyga3.txt";
+            const string input2 = "Knyga2.txt";
             const string output = "Rodikliai.txt";
 
             char[] sentenceChar = { '!', '?', '.' };
@@ -27,20 +27,31 @@ namespace Lab04
             string[] words1 = text1.Split(punctuation, StringSplitOptions.RemoveEmptyEntries);
             string[] words2 = text2.Split(punctuation, StringSplitOptions.RemoveEmptyEntries);
             
-            // Writes Initial Data
+            // Creates Intial File
             InOut.CreateFile(output);
-            InOut.Write(text1.Split('\n'), output, $"{input1} Initial Data:");
-            InOut.Write(text2.Split('\n'), output, $"{input2} Initial Data:");
 
             // Common Word Count
             List<string> CommonWords = TaskUtils.GetCommonWords(words1, words2);
-            InOut.WriteWordRepetitions(CommonWords, TaskUtils.GetRepetition(CommonWords, words1), output, $"{input1} Common Word Count:");
-            InOut.WriteWordRepetitions(CommonWords, TaskUtils.GetRepetition(CommonWords, words2), output, $"{input2} Common Word Count:");
+            InOut.WriteWordRepetitions(CommonWords, 
+                                       TaskUtils.GetRepetition(CommonWords, words1), 
+                                       output, $"{input1} Common Word Count:");
+
+            InOut.WriteWordRepetitions(CommonWords, 
+                                       TaskUtils.GetRepetition(CommonWords, words2), 
+                                       output, $"{input2} Common Word Count:");
 
             // Sentences
-            InOut.WriteLongestSentence(output, $"{input1} Longest Sentence Info:", sentences1, text1);
-            InOut.WriteLongestSentence(output, $"{input2} Longest Sentence Info:", sentences2, text2);
+            InOut.WriteLongestSentence(output, 
+                                       $"{input1} Longest Sentence Info:", 
+                                       sentences1, 
+                                       text1);
 
+            InOut.WriteLongestSentence(output, 
+                                       $"{input2} Longest Sentence Info:", 
+                                       sentences2, 
+                                       text2);
+
+            InOut.WriteString("ManoKnyga.txt", TaskUtils.WriteBook(text1, text2));
         }
     }
 }

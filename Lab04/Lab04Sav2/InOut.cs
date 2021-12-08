@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace Lab04Sav2
@@ -12,45 +11,63 @@ namespace Lab04Sav2
     {
         public static void Process(string fin, string fout)
         {
-            string text = File.ReadAllText(fin, Encoding.UTF8);
-            using (var writer = File.CreateText(fout))
+            string text = File.ReadAllText(fin);
+            bool isComment = false;
+            bool isString = false;
+            
+            // Removes comments
+            for (int i = 0; i < text.Length; i++)
             {
-
-                text = RemoveExtendedComments(text);
-                foreach (string line in text.Split('\n'))
+                // Start of String
+                if (isString == false && isComment == false && text[i] == '\"' && text[i - 1] != '\\')
                 {
-                    writer.WriteLine(RemoveRegularComments(line));
+                    isString = true;
+                    continue;
+                } 
+                // End of String
+                if (isString == true && text[i] == '\"' && text[i - 1] != '\\')
+                    isString = false;
+
+                // Start of multiline comment
+                if (isComment == false && isString == false && text[i] == '/' && text[i+1] == '*')
+                    isComment = true;
+
+                // end of multilinecomment
+                if (isComment == true && text[i] == '*' && text[i + 1] == '/')
+                {
+                    // removes */
+                    text = text.Remove(i, 2);
+                    i--;
+                    isComment = false;
+                }
+
+                // removes current element
+                if (isComment == true)
+                {
+                    text = text.Remove(i,1);
+                    i--;
+                }
+                // Checks if inline comment
+                else if (isComment == false && isString == false && text[i] == '/' && text[i + 1] == '/')
+                {
+                    int index = text.IndexOf('\n', i);
+                    // Removes till newline
+                    if (index != -1)
+                    {
+                        text = text.Remove(i, index - i); // Adds line splitter to be removed
+                        i--;
+                    }
+                    // Removes till EOF
+                    else if (index == -1)
+                        text = text.Remove(i);
+
                 }
             }
-        }
 
-        private static string RemoveExtendedComments(string text)
-        {
-            string newText = Regex.Replace(text, @"\/\*(.|[\r\n])*?\*\/", "",RegexOptions.ECMAScript) ;
+            // Outputs new text
+            using (var sw = File.CreateText(fout))
+                sw.WriteLine(text.Trim());
 
-            return newText;
-        }
-
-        private static string RemoveRegularComments(string line)
-        {
-            string newLine = line;
-            for (int i = 0; i < line.Length - 1; i++)
-            {
-                if (line[i] == '/' && line[i + 1] == '/')
-                {
-                    newLine = line.Remove(i);
-                    return newLine;
-                }
-            }
-            return newLine;
-        }
-
-        public static bool RemoveComments(string line, out string newLine)
-        {
-            newLine = RemoveRegularComments(line);
-            if (newLine != line)
-                return true;
-            return false;
         }
     }
 }

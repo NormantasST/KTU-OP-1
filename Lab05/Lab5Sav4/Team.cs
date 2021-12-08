@@ -9,8 +9,7 @@ namespace Lab5Sav4
     public class Team
     {
         public string Type { get; set; }
-        private Type typeClass;
-        public Type TypeClass { get { return typeClass; } }
+        public readonly Type TypeClass;
         public string TeamName { get; set; }
         public string City { get; set; }
         public string Trainer { get; set; }
@@ -22,11 +21,11 @@ namespace Lab5Sav4
             {
                 case "k":
                     Type = "Basketball";
-                    typeClass = typeof(Basketball);
+                    TypeClass = typeof(Basketball);
                     break;
                 case "f":
                     Type = "Football";
-                    typeClass = typeof(Football);
+                    TypeClass = typeof(Football);
                     break;
                 default:
                     Type = "Unknown";
