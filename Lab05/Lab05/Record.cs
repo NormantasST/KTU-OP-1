@@ -5,39 +5,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
-namespace Lab03
+namespace Lab05
 {
     /// <summary>
     /// IMDB Movie Object
     /// </summary>
-    class IMDB
+    public abstract class Record
     {
         public string       Name     { get; set; }
-        public int          Date     { get; set; }
         public string       Genre    { get; set; }
         public string       Studio   { get; set; }
-        public string       Director { get; set; }
         public List<string> Actors   { get; set; }
-        public int          Revenue  { get; set; }
         
 
         /// <summary>
         /// Constructor
         /// </summary>
-        public IMDB(string name,
-                    int    date,
+        public Record(string name,
                     string genre,
                     string studio,
-                    string director,
                     string actor1,
-                    string actor2,
-                    int    revenue)
+                    string actor2)
         {
             Name     = name;
-            Date     = date;
             Genre    = genre;
-            Director = director;
-            Revenue  = revenue;
             Studio   = studio;
 
             Actors = new List<string>();
@@ -50,7 +41,7 @@ namespace Lab03
         /// </summary>
         public override bool Equals(object otherObj)
         {
-            return this.Name == ((IMDB)otherObj).Name;
+            return this.Name == ((Record)otherObj).Name;
         }
 
 
@@ -73,25 +64,26 @@ namespace Lab03
         /// ToString()
         /// </summary>
         /// <returns></returns>
-        public string ToString(char splitter)
+        public virtual string ToString(char splitter)
         {
-            
-            return  $"{this.Name,-20}{splitter}" +
-                    $"{this.Date,20}{splitter}" +
+
+            return $"{this.Name,-20}{splitter}" +
                     $"{this.Genre,-20}{splitter}" +
                     $"{this.Studio,-20}{splitter}" +
-                    $"{this.Director,-20}{splitter}" +
                     $"{this.Actors[0],-20}{splitter}" +
-                    $"{this.Actors[1],-20}{splitter}" +
-                    $"{this.Revenue,10}{splitter}";
+                    $"{this.Actors[1],-20}{splitter}";
         }
 
         /// <summary>
-        /// CompareTo Override
+        /// Compare To Method implementation
         /// </summary>
-        public int CompareTo(IMDB other)
+        internal int CompareTo(Record record)
         {
-            return Revenue.CompareTo(other.Revenue);
+            int comparison = Genre.CompareTo(record.Genre);
+            if (comparison == 0)
+                comparison = Name.CompareTo(record.Name);
+
+            return comparison;
         }
     }
 }

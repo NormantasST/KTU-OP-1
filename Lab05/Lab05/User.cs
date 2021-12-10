@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab03
+namespace Lab05
 {
     /// <summary>
     /// User Class Object.
@@ -13,7 +13,6 @@ namespace Lab03
         public string Name { get; set; }
         public DateTime BirthDate { get; set; }
         public string City { get; set; }
-        //public List<IMDB> Movies { get { return movies; } }
 
         private IMDBContainer movies;
 
@@ -39,9 +38,9 @@ namespace Lab03
         /// <summary>
         /// Adds the movie to users catologue
         /// </summary>
-        public void AddMovie(IMDB imdb)
+        public void AddMovie(Record imdb)
         {
-            IMDB temp = AllMovieInfo.GetMovieByTitle(imdb.Name);
+            Record temp = AllMovieInfo.GetMovieByTitle(imdb.Name);
             if (temp != null) // If the movie exists, copies the existing movie
                 imdb = temp;
                 
@@ -57,7 +56,7 @@ namespace Lab03
             return movies.Count;
         }
 
-        public IMDB GetMovieByIndex(int index)
+        public Record GetMovieByIndex(int index)
         {
             try
             {
@@ -90,43 +89,59 @@ namespace Lab03
             return $"{this.Name} {this.BirthDate} {this.City}";
         }
 
+
+        /// <summary>
+        /// Returns All Actors in a List
+        /// </summary>
+        private List<string> GetAllActors()
+        {
+            List<string> actors = new List<string>();
+            for (int i = 0; i < movies.Count; i++)
+            {
+                Record record = movies.Get(i);
+                actors.Add(record.Actors[0]);
+
+                if(record.Actors[1] != record.Actors[0]) // Checks for duplicates
+                    actors.Add(record.Actors[1]);
+            }
+
+            return actors;
+        }
+
         /// <summary>
         /// GetsFavorite Director for provided User
         /// </summary>
-        public string[] GetFavoriteDirector()
+        public List<string> GetFavoriteActors()
         {
-            string[] names = new string[movies.Count];
-            int moviesDirected = 0;
-            int n = 0;
+            List<string> favoriteActors = new List<string>();
+            int moviesInMax = 0;
 
-            for (int i = 0; i < movies.Count; i++)
+            List<string> actors = GetAllActors();
+
+            for (int i = 0; i < actors.Count; i++)
             {
-                string currName = movies.Get(i).Director;
-                int currDirectedCount = 0;
-                for (int j = i; j < movies.Count; j++)
-                    if (movies.Get(j).Director == currName)
-                        currDirectedCount++;
+                string currActor = actors[i];
+                int moviesIn = 0;
+                for (int j = i; j < actors.Count; j++)
+                    if (actors[j] == currActor)
+                        moviesIn++;
 
                 // Resets
-                if (currDirectedCount > moviesDirected)
+                if (moviesIn > moviesInMax)
                 {
-                    moviesDirected = currDirectedCount;
-                    names = new string[movies.Count];
-                    n = 0;
+                    moviesInMax = moviesIn;
+                    favoriteActors.Clear();
                 }
 
                 // Adds users
-                if (currDirectedCount == moviesDirected)
+                if (moviesInMax == moviesIn)
                 {
-                    names[n] = currName;
-                    n++;
+                    favoriteActors.Add(currActor);
                 }
             }
 
-            string[] output = new string[n];
-            Array.Copy(names, output, n);
-
-            return output;
+            return favoriteActors;
         }
+
     }
 }

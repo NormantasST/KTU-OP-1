@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Lab03
+namespace Lab05
 {
 
     /// <summary>
@@ -10,12 +10,12 @@ namespace Lab03
     class IMDBContainer
     {
 
-        private IMDB[] Movies;
+        private Record[] Movies;
         public int Count { get; private set; }
         public int Capacity { get; set; }
         public IMDBContainer(int capacity = 16)
         {
-            this.Movies = new IMDB[capacity];//default capacity
+            this.Movies = new Record[capacity];//default capacity
             Capacity = capacity;
             Count = 0;
         }
@@ -34,7 +34,7 @@ namespace Lab03
         /// <summary>
         /// IMDB Container Add
         /// </summary>
-        public void Add(IMDB imdb)
+        public void Add(Record imdb)
         {
             if (this.Count == this.Capacity) //container is full
             {
@@ -46,7 +46,7 @@ namespace Lab03
         /// <summary>
         /// Get by Index function
         /// </summary>
-        public IMDB Get(int index)
+        public Record Get(int index)
         {
             return this.Movies[index];
         }
@@ -54,7 +54,7 @@ namespace Lab03
         /// <summary>
         /// Contains Implementation
         /// </summary>
-        public bool Contains(IMDB idmb)
+        public bool Contains(Record idmb)
         {
             for (int i = 0; i < this.Count; i++)
                 if (this.Movies[i].Equals(idmb))
@@ -71,7 +71,7 @@ namespace Lab03
         {
             if (minimumCapacity > this.Capacity)
             {
-                IMDB[] temp = new IMDB[minimumCapacity];
+                Record[] temp = new Record[minimumCapacity];
                 for (int i = 0; i < this.Count; i++) // Shallow Copy
                 {
                     temp[i] = this.Movies[i];
@@ -85,7 +85,7 @@ namespace Lab03
         /// <summary>
         /// Put Function Container
         /// </summary>
-        public IMDB Put(IMDB imdb, int index)
+        public Record Put(Record imdb, int index)
         {
             index = CheckIndex(index);
             if (index == Count)
@@ -97,7 +97,7 @@ namespace Lab03
                 Count++;
             }
 
-            IMDB otherDog = Movies[index];
+            Record otherDog = Movies[index];
             Movies[index] = imdb;
 
             return otherDog;
@@ -106,7 +106,7 @@ namespace Lab03
         /// <summary>
         /// Insert Implementation
         /// </summary>
-        public IMDB Insert(IMDB dog, int index)
+        public Record Insert(Record dog, int index)
         {
             if (this.Count == this.Capacity) //container is full
             {
@@ -118,6 +118,7 @@ namespace Lab03
             {
                 Movies[i + 1] = Movies[i];
             }
+            
 
             Count++;
             Movies[index] = dog;
@@ -128,7 +129,7 @@ namespace Lab03
         /// <summary>
         /// FindIndex Container Implementation
         /// </summary>
-        public int FindIndex(IMDB imdb)
+        public int FindIndex(Record imdb)
         {
             for (int i = 0; i < Count; i++)
             {
@@ -141,7 +142,7 @@ namespace Lab03
         /// <summary>
         /// Remove Container Implementation
         /// </summary>
-        public void Remove(IMDB imdb)
+        public void Remove(Record imdb)
         {
             int index = FindIndex(imdb);
             if (index != -1)
@@ -176,27 +177,7 @@ namespace Lab03
             return index;
         }
 
-        /// <summary>
-        /// Selection Sort implementation
-        /// </summary>
-        public IMDBContainer Sort()
-        {
-            for (int i = 0; i < Count - 1; i++)
-            {
-                int min_idx = i;
-                for (int j = i + 1; j < Count; j++)
-                    if (Movies[j].CompareTo(Movies[min_idx]) < 0)
-                        min_idx = j;
-                
-                        
 
-                IMDB temp = Movies[min_idx];
-                Movies[min_idx] = Movies[i];
-                Movies[i] = temp;
-            }
-
-            return this;
-        }
 
 
         /// <summary>
@@ -204,7 +185,7 @@ namespace Lab03
         /// </summary>
         public void Clear(int capacity = 16)
         {
-            this.Movies = new IMDB[capacity];//default capacity
+            this.Movies = new Record[capacity];//default capacity
             Capacity = capacity;
             Count = 0;
         }
@@ -215,6 +196,27 @@ namespace Lab03
         public override string ToString()
         {
             return $"Element Count: {Count} Element Capacity: {Capacity}";
+        }
+
+        /// <summary>
+        /// Bubble Sort
+        /// </summary>
+        /// <returns></returns>
+        public IMDBContainer Sort()
+        {
+            for (int i = 0; i < Count - 1; i++)
+            {
+                for (int j = 0; j < Count - 1 - i; j++)
+                    if(Movies[j].CompareTo(Movies[j+1]) > 0)
+                    {
+                        // SWAP
+                        Record temp = Movies[j];
+                        Movies[j] = Movies[j + 1];
+                        Movies[j+1] = temp;
+                    }
+            }
+
+            return this;
         }
     }
 }

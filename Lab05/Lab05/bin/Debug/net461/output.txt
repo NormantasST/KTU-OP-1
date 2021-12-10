@@ -1,0 +1,29 @@
+Initial Data:
+
+Tomas Asas          |6/4/2000            |Kaunas              
+
+Type                |Name                |Genre               |Studio              |Actor 1             |Actor 2             |Episodes/Date       |Start Year/Director |Status/Revenue      |End Year (Serial)   |
+Film                |Titanic             |History             |Studio B            |N. Cage             |Tim Hell            |1980                |Director A          |                 450|
+Film                |Hangover 2          |Comedy              |Studio A            |N. Cage             |N. Cage             |2003                |Director B          |                 100|
+Serial              |AttackOnTitan       |Action              |Mappa               |Mikasa              |Levi                |                  68|                2013|True                |
+Serial              |The Boys            |Action              |Amazon Studios      |Tim Hell            |Helly               |                  20|                2019|True                |
+Serial              |Breaking Bad        |Thriller            |Bad Studios         |Heisenberg          |Jesse               |                  63|                2003|False               |2003                |
+Film                |Hangover 3          |Comedy              |Studio A            |Tim Hell            |J. Sperrow          |2008                | Director B         |                 200|
+Film                |Adventure-USA       |Comedy              |Studio C            |Comedian1           |Comedian2           |2006                |Director M          |                   5|
+Film                |Hangover 1          |Comedy              |Studio A            |N. Cage             |J. Sperrow          |2012                | Director C         |                 300|
+
+Benas Fanas         |11/30/2008          |Kaunas              
+
+Type                |Name                |Genre               |Studio              |Actor 1             |Actor 2             |Episodes/Date       |Start Year/Director |Status/Revenue      |End Year (Serial)   |
+Serial              |AttackOnTitan       |Action              |Mappa               |Mikasa              |Levi                |                  68|                2013|True                |
+Film                |Film 1              |Cartoon             |Studio 1            |Nicolas             |Thomas              |2001                |Director 1          |                   1|
+Film                |Hangover 1          |Comedy              |Studio A            |N. Cage             |J. Sperrow          |2012                | Director C         |                 300|
+Serial              |Serial 1            |Anime               |STudio 2            |Thomas              |Jefferson           |                  20|                2000|False               |2000                |
+
+Zikas Vipas         |4/12/2020           |Kaunas              
+
+Type                |Name                |Genre               |Studio              |Actor 1             |Actor 2             |Episodes/Date       |Start Year/Director |Status/Revenue      |End Year (Serial)   |
+Serial              |AttackOnTitan       |Action              |Mappa               |Mikasa              |Levi                |                  68|                2013|True                |
+Film                |Kiki's Journey      |Adventure           |Ghibli              |KiKi                |Tobo                |2007                |Miyazaki            |                 500|
+Serial              |Gundam              |Mech                |Studio-Gundam       |Gundam1             |Gundam2             |                 200|                1988|False               |1988                |
+Film                |Hangover 1          |Comedy              |Studio A            |N. Cage             |J. Sperrow          |2012                | Director C         |                 300|

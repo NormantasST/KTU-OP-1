@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.AssemblyInfo.cs
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net461\Lab05.exe.config
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net461\Lab05.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\bin\Debug\net461\Lab05.pdb
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.exe
+C:\Users\Admin\Desktop\KTU-OOP-Semester1-main\Lab05\Lab05\obj\Debug\net461\Lab05.pdb

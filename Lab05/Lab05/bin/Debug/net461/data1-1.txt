@@ -1,0 +1,11 @@
+Tomas Asas
+2000-06-04
+Kaunas
+f;Titanic;History;Studio B;N. Cage;Tim Hell;1980;Director A;450;
+f;Hangover 2;Comedy;Studio A;N. Cage;N. Cage;2003;Director B;100;
+s;AttackOnTitan;Action;Mappa;Mikasa;Levi;68;2013;true
+s;The Boys;Action;Amazon Studios;Tim Hell;Helly;20;2019;true;
+s;Breaking Bad;Thriller;Bad Studios;Heisenberg;Jesse;63;2003;false;2013;
+f;Hangover 3;Comedy;Studio A;Tim Hell;J. Sperrow;2008; Director B;200;
+f;Adventure-USA;Comedy;Studio C;Comedian1;Comedian2;2006;Director M;5
+f;Hangover 1;Comedy;Studio A;N. Cage;J. Sperrow;2012; Director C;300;
