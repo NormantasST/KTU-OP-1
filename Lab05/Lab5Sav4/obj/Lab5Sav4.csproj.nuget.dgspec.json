@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj": {
+    "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj",
         "projectName": "Lab5Sav4",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Sav4\\Lab5Sav4.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Sav4\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Sav4\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

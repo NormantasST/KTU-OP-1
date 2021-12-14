@@ -216,9 +216,11 @@ namespace Lab05
                 sw.WriteLine(InfoStringCSV(splitter));
 
                 IMDBContainer reccomendedMovies = AllMovieInfo.GetReccomendedMovies(user);
-
-                for (int i = 0; i < reccomendedMovies.Count; i++)
-                    sw.WriteLine(reccomendedMovies.Get(i).ToString(';'));
+                if (reccomendedMovies.Count > 0)
+                    for (int i = 0; i < reccomendedMovies.Count; i++)
+                        sw.WriteLine(reccomendedMovies.Get(i).ToString(';'));
+                else
+                    sw.WriteLine("No Data Found");
 
             }
         }
@@ -242,51 +244,3 @@ namespace Lab05
         }
     }
 }
-/* LEGACY CODE:
- * 
- * /// <summary>
-        /// Print to screen function
-        /// </summary>
-        /// <param name="movies"></param>
-        public static void PrintToScreen(this IMDBContainer movies, string header)
-        {
-            char splitter = '|';
-            Console.WriteLine(header);
-
-            if (movies.Count > 0)
-            {
-                Console.WriteLine($"{"Name",tSize}{splitter}" +
-                                $"{"Date",tSize}{splitter}" +
-                                $"{"Genre",tSize}{splitter}" +
-                                $"{"Studio",tSize}{splitter}" +
-                                $"{"Director",tSize}{splitter}" +
-                                $"{"Actor 1",tSize}{splitter}" +
-                                $"{"Actor 2",tSize}{splitter}" +
-                                $"{"Revenue",-10}{splitter}");
-
-                for (int i = 0; i < movies.Count; i++)
-                    Console.WriteLine(movies.Get(i).ToString(splitter));
-            }
-            else
-                Console.WriteLine("No Movies Found");
-
-            Console.WriteLine();
-        }
- 
- 
-    
-        /// <summary>
-        /// Prints String[] to Console, With provided header at the top
-        /// </summary>
-        public static void PrintStrings(string[] strings, string header)
-        {
-            Console.WriteLine(header);
-            for (int i = 0; i < strings.Length; i++)
-                Console.WriteLine(strings[i]);
-
-            Console.WriteLine();
-        }
-
-
- 
- */

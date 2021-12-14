@@ -1,0 +1,7 @@
+Benas Fanas
+2008-11-30
+Kaunas
+s;AttackOnTitan;Action;Mappa;Mikasa;Levi;68;2013;true;
+f;Film 1;Cartoon;Studio 1;Nicolas;Thomas;2001;Director 1;1;
+f;Hangover 1;Comedy;Studio A;N. Cage;Timmy;2003;Director B;100;
+s;Serial 1;Anime;STudio 2;Thomas;Jefferson;20;2000;false;2005;

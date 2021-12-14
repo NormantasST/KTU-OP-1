@@ -1,0 +1,9 @@
+Type;Name;Genre;Studio;Actor 1;Actor 2;Episodes/Date;Start Year/Director;Status/Revenue;End Year (Serial);
+Serial              ;The Boys            ;Action              ;Amazon Studios      ;Tim Hell            ;Helly               ;                  20;                2019;True                ;
+Film                ;Kiki's Journey      ;Adventure           ;Ghibli              ;KiKi                ;Tobo                ;2007                ;Miyazaki            ;                 500;
+Film                ;Adventure-USA       ;Comedy              ;Studio C            ;Comedian1           ;Comedian2           ;2006                ;Director M          ;                   5;
+Film                ;Hangover 2          ;Comedy              ;Studio A            ;N. Cage             ;N. Cage             ;2003                ;Director B          ;                 100;
+Film                ;Hangover 3          ;Comedy              ;Studio A            ;Tim Hell            ;J. Sperrow          ;2008                ; Director B         ;                 200;
+Film                ;Titanic             ;History             ;Studio B            ;N. Cage             ;Tim Hell            ;1980                ;Director A          ;                 450;
+Serial              ;Gundam              ;Mech                ;Studio-Gundam       ;Gundam1             ;Gundam2             ;                 200;                1988;False               ;1988                ;
+Serial              ;Breaking Bad        ;Thriller            ;Bad Studios         ;Heisenberg          ;Jesse               ;                  63;                2003;False               ;2003                ;

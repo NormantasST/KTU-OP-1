@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Register\\Lab5Register.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Register\\Lab5Register.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Register\\Lab5Register.csproj": {
+    "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Register\\Lab5Register.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Register\\Lab5Register.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Register\\Lab5Register.csproj",
         "projectName": "Lab5Register",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Register\\Lab5Register.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Register\\Lab5Register.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\KTU-OOP-Semester1-main\\Lab05\\Lab5Register\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\OOP  S1\\KTU-OP-1\\Lab05\\Lab5Register\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

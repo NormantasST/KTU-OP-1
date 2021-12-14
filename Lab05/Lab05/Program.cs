@@ -8,9 +8,9 @@ namespace Lab05
         static void Main(string[] args)
         {
             // Paths:
-            const string FD1 = "data1-1.txt";
-            const string FD2 = "data1-2.txt";
-            const string FD3 = "data1-3.txt";
+            const string FD1 = "data2-1.txt";
+            const string FD2 = "data2-2.txt";
+            const string FD3 = "data2-3.txt";
             const string FOgenres = "Žanrai.csv";
             const string FOseenAll = "MatėVisi.csv";
             const string FOmain = "output.txt";
@@ -24,8 +24,6 @@ namespace Lab05
             InOutHelpers.WriteInitialData(users[1], FOmain);
             users.Add(InOutHelpers.ReadUser(FD3));
             InOutHelpers.WriteInitialData(users[2], FOmain);
-            //users.Add(InOutHelpers.ReadUser("data1-4.txt"));
-            //InOutHelpers.WriteInitialData(users[3], FOmain);
 
             // T1 Prints User's favorite actor/actors
             users[0].PrintFavoriteActors();

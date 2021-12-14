@@ -1,0 +1,9 @@
+Type;Name;Genre;Studio;Actor 1;Actor 2;Episodes/Date;Start Year/Director;Status/Revenue;End Year (Serial);
+Serial              ;The Boys            ;Action              ;Amazon Studios      ;Tim Hell            ;Helly               ;                  20;                2019;True                ;
+Serial              ;Serial 1            ;Anime               ;STudio 2            ;Thomas              ;Jefferson           ;                  20;                2000;False               ;2000                ;
+Film                ;Film 1              ;Cartoon             ;Studio 1            ;Nicolas             ;Thomas              ;2001                ;Director 1          ;                   1;
+Film                ;Adventure-USA       ;Comedy              ;Studio C            ;Comedian1           ;Comedian2           ;2006                ;Director M          ;                   5;
+Film                ;Hangover 2          ;Comedy              ;Studio A            ;N. Cage             ;N. Cage             ;2003                ;Director B          ;                 100;
+Film                ;Hangover 3          ;Comedy              ;Studio A            ;Tim Hell            ;J. Sperrow          ;2008                ; Director B         ;                 200;
+Film                ;Titanic             ;History             ;Studio B            ;N. Cage             ;Tim Hell            ;1980                ;Director A          ;                 450;
+Serial              ;Breaking Bad        ;Thriller            ;Bad Studios         ;Heisenberg          ;Jesse               ;                  63;                2003;False               ;2003                ;
